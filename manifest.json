@@ -1,0 +1,23 @@
+{
+  "additional_parameters": {
+    "token_url": {}
+  },
+  "auth": "oauth2",
+  "datatypes": {
+    "customer": {
+      "template": "templates/customer.json"
+    }
+  },
+  "oauth2": {
+    "login_url": "https://test-login.softrig.com/connect/authorize",
+    "scopes": [
+      "AppFramework",
+      "Administrator",
+      "openid",
+      "profile",
+      "offline_access"
+    ],
+    "token_url": "https://test-login.softrig.com/connect/token"
+  },
+  "system-template": "templates/system.json"
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "_id": "{{@ system @}}-{{@ datatype @}}-collect",
+    "source": {
+      "operation": "list",
+      "operations": {
+        "list": {
+          "method": "GET",
+          "url": "api/biz/{{@ datatype @}}s"
+        }
+      },
+      "system": "{{@ system @}}",
+      "trace": true,
+      "type": "rest"
+    },
+    "type": "pipe"
+  },
+  {
+    "_id": "{{@ system @}}-{{@ datatype @}}-collect",
+    "namespaced_identifiers": false,
+    "source": {
+      "operation": "list",
+      "operations": {
+        "list": {
+          "id_expression": "{{ ID }}",
+          "method": "GET",
+          "url": "api/biz/{{@ datatype @}}s"
+        }
+      },
+      "system": "{{@ system @}}",
+      "type": "rest"
+    },
+    "type": "pipe"
+  }
+]
