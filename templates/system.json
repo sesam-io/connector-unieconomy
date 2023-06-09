@@ -9,5 +9,33 @@
   },
   "type": "system:rest",
   "url_pattern": "https://test.softrig.com/%s",
-  "verify_ssl": true
+  "verify_ssl": true,
+  "operations": {
+    "customer-delete": {
+      "method": "DELETE",
+      "url": "api/biz/customers/{{ entity.ID }}"
+    },
+    "customer-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/customers/{{ entity.ID }}"
+    },
+    "customer-list": {
+      "id_expression": "{{ id }}",
+      "method": "GET",
+      "next_page_link": "{{@ base_url @}}/v2/contact?from={{ body.from + body.count }}",
+      "next_page_termination_strategy": "empty-result",
+      "payload_property": "values",
+      "url": "api/biz/customers"
+    },
+    "customer-lookup": {
+      "method": "GET",
+      "url": "api/biz/customers/{{ entity.ID }}"
+    },
+    "customer-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/customers/{{ entity.ID }}"
+    }
+  }
 }
