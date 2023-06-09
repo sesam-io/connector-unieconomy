@@ -30,9 +30,6 @@
     },
    "companies": {
       "template": "templates/customers.json"
-    },
-   "employees": {
-      "template": "templates/customers.json"
     }
   },
   "oauth2": {

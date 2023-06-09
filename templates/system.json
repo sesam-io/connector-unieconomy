@@ -214,29 +214,6 @@
       "method": "PUT",
       "payload-type": "json",
       "url": "api/biz/companies/{{ entity.ID }}"
-    },
-    "employees-delete": {
-      "method": "DELETE",
-      "url": "api/biz/employees/{{ entity.ID }}"
-    },
-    "employees-insert": {
-      "method": "POST",
-      "payload-type": "json",
-      "url": "api/biz/employees/{{ entity.ID }}"
-    },
-    "employees-list": {
-      "id_expression": "{{ ID }}",
-      "method": "GET",
-      "url": "api/biz/employees"
-    },
-    "employees-lookup": {
-      "method": "GET",
-      "url": "api/biz/employees/{{ entity.ID }}"
-    },
-    "employees-update": {
-      "method": "PUT",
-      "payload-type": "json",
-      "url": "api/biz/companies/{{ entity.ID }}"
     }
   },
   "type": "system:rest",
