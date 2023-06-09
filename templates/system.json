@@ -8,28 +8,51 @@
     "token_url": "{{@ token_url @}}"
   },
   "operations": {
-    "customer-delete": {
+    "customers-delete": {
       "method": "DELETE",
       "url": "api/biz/customers/{{ entity.ID }}"
     },
-    "customer-insert": {
+    "customers-insert": {
       "method": "POST",
       "payload-type": "json",
       "url": "api/biz/customers/{{ entity.ID }}"
     },
-    "customer-list": {
+    "customers-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
       "url": "api/biz/customers"
     },
-    "customer-lookup": {
+    "customers-lookup": {
       "method": "GET",
       "url": "api/biz/customers/{{ entity.ID }}"
     },
-    "customer-update": {
+    "customers-update": {
       "method": "PUT",
       "payload-type": "json",
       "url": "api/biz/customers/{{ entity.ID }}"
+    },
+    "orders-delete": {
+      "method": "DELETE",
+      "url": "api/biz/orders/{{ entity.ID }}"
+    },
+    "orders-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/orders/{{ entity.ID }}"
+    },
+    "orders-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/orders"
+    },
+    "orders-lookup": {
+      "method": "GET",
+      "url": "api/biz/orders/{{ entity.ID }}"
+    },
+    "orders-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/orders/{{ entity.ID }}"
     }
   },
   "type": "system:rest",
