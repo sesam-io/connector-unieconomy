@@ -122,6 +122,121 @@
       "method": "PUT",
       "payload-type": "json",
       "url": "api/biz/products/{{ entity.ID }}"
+    },
+    "currencies-delete": {
+      "method": "DELETE",
+      "url": "api/biz/currencies/{{ entity.ID }}"
+    },
+    "currencies-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/currencies/{{ entity.ID }}"
+    },
+    "currencies-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/currencies"
+    },
+    "currencies-lookup": {
+      "method": "GET",
+      "url": "api/biz/currencies/{{ entity.ID }}"
+    },
+    "currencies-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/currencies/{{ entity.ID }}"
+    },
+    "currencycodes-delete": {
+      "method": "DELETE",
+      "url": "api/biz/currencycodes/{{ entity.ID }}"
+    },
+    "currencycodes-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/currencycodes/{{ entity.ID }}"
+    },
+    "currencycodes-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/currencycodes"
+    },
+    "currencycodes-lookup": {
+      "method": "GET",
+      "url": "api/biz/currencycodes/{{ entity.ID }}"
+    },
+    "currencycodes-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/currencycodes/{{ entity.ID }}"
+    },
+    "countries-delete": {
+      "method": "DELETE",
+      "url": "api/biz/countries/{{ entity.ID }}"
+    },
+    "countries-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/countries/{{ entity.ID }}"
+    },
+    "countries-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/countries"
+    },
+    "countries-lookup": {
+      "method": "GET",
+      "url": "api/biz/countries/{{ entity.ID }}"
+    },
+    "countries-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/countries/{{ entity.ID }}"
+    },
+    "companies-delete": {
+      "method": "DELETE",
+      "url": "api/biz/companies/{{ entity.ID }}"
+    },
+    "companies-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/companies/{{ entity.ID }}"
+    },
+    "companies-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/companies"
+    },
+    "companies-lookup": {
+      "method": "GET",
+      "url": "api/biz/companies/{{ entity.ID }}"
+    },
+    "companies-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/companies/{{ entity.ID }}"
+    },
+    "employees-delete": {
+      "method": "DELETE",
+      "url": "api/biz/employees/{{ entity.ID }}"
+    },
+    "employees-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/employees/{{ entity.ID }}"
+    },
+    "employees-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/employees"
+    },
+    "employees-lookup": {
+      "method": "GET",
+      "url": "api/biz/employees/{{ entity.ID }}"
+    },
+    "employees-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/companies/{{ entity.ID }}"
     }
   },
   "type": "system:rest",
