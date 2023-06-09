@@ -31,28 +31,97 @@
       "payload-type": "json",
       "url": "api/biz/customers/{{ entity.ID }}"
     },
-    "orders-delete": {
+    "contacts-delete": {
       "method": "DELETE",
-      "url": "api/biz/orders/{{ entity.ID }}"
+      "url": "api/biz/contacts/{{ entity.ID }}"
     },
-    "orders-insert": {
+    "contacts-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/orders/{{ entity.ID }}"
+      "url": "api/biz/contacts/{{ entity.ID }}"
     },
-    "orders-list": {
+    "contacts-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
-      "url": "api/biz/orders"
+      "url": "api/biz/contacts"
     },
-    "orders-lookup": {
+    "contacts-lookup": {
       "method": "GET",
-      "url": "api/biz/orders/{{ entity.ID }}"
+      "url": "api/biz/contacts/{{ entity.ID }}"
     },
-    "orderitems-update": {
+    "contacts-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/orderitems/{{ entity.ID }}"
+      "url": "api/biz/contacts/{{ entity.ID }}"
+    },
+    "departments-delete": {
+      "method": "DELETE",
+      "url": "api/biz/departments/{{ entity.ID }}"
+    },
+    "departments-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/departments/{{ entity.ID }}"
+    },
+    "departments-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/departments"
+    },
+    "departments-lookup": {
+      "method": "GET",
+      "url": "api/biz/departments/{{ entity.ID }}"
+    },
+    "departments-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/departments/{{ entity.ID }}"
+    },
+    "dimensions-delete": {
+      "method": "DELETE",
+      "url": "api/biz/dimensions/{{ entity.ID }}"
+    },
+    "dimensions-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/dimensions/{{ entity.ID }}"
+    },
+    "dimensions-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/dimensions"
+    },
+    "dimensions-lookup": {
+      "method": "GET",
+      "url": "api/biz/dimensions/{{ entity.ID }}"
+    },
+    "dimensions-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/dimensions/{{ entity.ID }}"
+    },
+    "employees-delete": {
+      "method": "DELETE",
+      "url": "api/biz/employees/{{ entity.ID }}"
+    },
+    "employees-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/employees/{{ entity.ID }}"
+    },
+    "employees-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/employees"
+    },
+    "employees-lookup": {
+      "method": "GET",
+      "url": "api/biz/employees/{{ entity.ID }}"
+    },
+    "employees-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/employees/{{ entity.ID }}"
     },
     "orderitems-delete": {
       "method": "DELETE",
@@ -71,6 +140,29 @@
     "orderitems-lookup": {
       "method": "GET",
       "url": "api/biz/orderitems/{{ entity.ID }}"
+    },
+    "orderitems-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/orderitems/{{ entity.ID }}"
+    },
+    "orders-delete": {
+      "method": "DELETE",
+      "url": "api/biz/orders/{{ entity.ID }}"
+    },
+    "orders-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/orders/{{ entity.ID }}"
+    },
+    "orders-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/orders"
+    },
+    "orders-lookup": {
+      "method": "GET",
+      "url": "api/biz/orders/{{ entity.ID }}"
     },
     "orders-update": {
       "method": "PUT",
