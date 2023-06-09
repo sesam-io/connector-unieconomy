@@ -8,7 +8,10 @@
     "source": {
       "operation": "{{@ datatype @}}-list",
       "system": "{{@ system @}}",
-      "trace": true,
+      "trace": {
+        "log_request_body_maxsize": 100000,
+        "log_response_body_maxsize": 100000
+      },
       "type": "rest"
     },
     "transform": [
@@ -40,7 +43,6 @@
         "type": "template"
       },
       {
-        "type": "dtl",
         "rules": {
           "default": [
             [
@@ -48,7 +50,8 @@
               "*"
             ]
           ]
-        }
+        },
+        "type": "dtl"
       }
     ],
     "type": "pipe"
