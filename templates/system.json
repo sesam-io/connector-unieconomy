@@ -47,7 +47,7 @@
     },
     "contacts-lookup": {
       "method": "GET",
-      "url": "api/biz/contacts/{{ entity['$source']['ID'] }}"
+      "url": "api/biz/contacts/{{ entity['$source']['ID'] }}?expand=Info,Info.InvoiceAddress,Info.DefaultPhone,Info.DefaultEmail,Info.DefaultAddress"
     },
     "contacts-update": {
       "method": "PUT",
