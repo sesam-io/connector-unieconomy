@@ -18,6 +18,18 @@
     },
    "products": {
       "template": "templates/customers.json"
+    },
+   "currencies": {
+      "template": "templates/customers.json"
+    },
+   "currencycodes": {
+      "template": "templates/customers.json"
+    },
+   "countries": {
+      "template": "templates/customers.json"
+    },
+   "companies": {
+      "template": "templates/customers.json"
     }
   },
   "oauth2": {
