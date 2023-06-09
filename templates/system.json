@@ -43,7 +43,7 @@
     "contacts-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
-      "url": "api/biz/contacts"
+      "url": "api/biz/contacts?expand=Info,Info.InvoiceAddress,Info.DefaultPhone,Info.DefaultEmail,Info.DefaultAddress&hateoas=false&top=100"
     },
     "contacts-lookup": {
       "method": "GET",
