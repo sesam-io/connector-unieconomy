@@ -4,19 +4,31 @@
   },
   "auth": "oauth2",
   "datatypes": {
-    "projects": {
+    "contacts": {
       "template": "templates/customers.json"
     },
     "customers": {
       "template": "templates/customers.json"
     },
-   "orders": {
+    "departments": {
       "template": "templates/customers.json"
     },
-   "orderitems": {
+    "dimensions": {
       "template": "templates/customers.json"
     },
-   "products": {
+    "employees": {
+      "template": "templates/customers.json"
+    },
+    "orderitems": {
+      "template": "templates/customers.json"
+    },
+    "orders": {
+      "template": "templates/customers.json"
+    },
+    "products": {
+      "template": "templates/customers.json"
+    },
+    "projects": {
       "template": "templates/customers.json"
     }
   },
