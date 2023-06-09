@@ -8,29 +8,6 @@
     "token_url": "{{@ token_url @}}"
   },
   "operations": {
-    "contacts-delete": {
-      "method": "DELETE",
-      "url": "api/biz/contacts/{{ entity.ID }}"
-    },
-    "contacts-insert": {
-      "method": "POST",
-      "payload-type": "json",
-      "url": "api/biz/contacts/{{ entity.ID }}"
-    },
-    "contacts-list": {
-      "id_expression": "{{ ID }}",
-      "method": "GET",
-      "url": "api/biz/contacts"
-    },
-    "contacts-lookup": {
-      "method": "GET",
-      "url": "api/biz/contacts/{{ entity.ID }}"
-    },
-    "contacts-update": {
-      "method": "PUT",
-      "payload-type": "json",
-      "url": "api/biz/contacts/{{ entity.ID }}"
-    },
     "customers-delete": {
       "method": "DELETE",
       "url": "api/biz/customers/{{ entity.ID }}"
@@ -53,6 +30,29 @@
       "method": "PUT",
       "payload-type": "json",
       "url": "api/biz/customers/{{ entity.ID }}"
+    },
+    "contacts-delete": {
+      "method": "DELETE",
+      "url": "api/biz/contacts/{{ entity.ID }}"
+    },
+    "contacts-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/contacts/{{ entity.ID }}"
+    },
+    "contacts-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/contacts"
+    },
+    "contacts-lookup": {
+      "method": "GET",
+      "url": "api/biz/contacts/{{ entity.ID }}"
+    },
+    "contacts-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/contacts/{{ entity.ID }}"
     },
     "departments-delete": {
       "method": "DELETE",
@@ -169,6 +169,29 @@
       "payload-type": "json",
       "url": "api/biz/orders/{{ entity.ID }}"
     },
+    "projects-delete": {
+      "method": "DELETE",
+      "url": "api/biz/projects/{{ entity.ID }}"
+    },
+    "projects-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/projects/{{ entity.ID }}"
+    },
+    "projects-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/projects"
+    },
+    "projects-lookup": {
+      "method": "GET",
+      "url": "api/biz/projects/{{ entity.ID }}"
+    },
+    "projects-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/projects/{{ entity.ID }}"
+    },
     "products-delete": {
       "method": "DELETE",
       "url": "api/biz/products/{{ entity.ID }}"
@@ -283,29 +306,6 @@
       "method": "PUT",
       "payload-type": "json",
       "url": "api/biz/companies/{{ entity.ID }}"
-    },
-    "projects-delete": {
-      "method": "DELETE",
-      "url": "api/biz/projects/{{ entity.ID }}"
-    },
-    "projects-insert": {
-      "method": "POST",
-      "payload-type": "json",
-      "url": "api/biz/projects/{{ entity.ID }}"
-    },
-    "projects-list": {
-      "id_expression": "{{ ID }}",
-      "method": "GET",
-      "url": "api/biz/projects"
-    },
-    "projects-lookup": {
-      "method": "GET",
-      "url": "api/biz/projects/{{ entity.ID }}"
-    },
-    "projects-update": {
-      "method": "PUT",
-      "payload-type": "json",
-      "url": "api/biz/projects/{{ entity.ID }}"
     }
   },
   "type": "system:rest",
