@@ -12,6 +12,9 @@
     },
    "orders": {
       "template": "templates/customers.json"
+    },
+   "products": {
+      "template": "templates/customers.json"
     }
   },
   "oauth2": {
