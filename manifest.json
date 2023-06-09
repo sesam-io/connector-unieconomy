@@ -4,11 +4,14 @@
   },
   "auth": "oauth2",
   "datatypes": {
+    "projects": {
+      "template": "templates/customers.json"
+    },
     "customers": {
       "template": "templates/customers.json"
     },
    "orders": {
-      "template": "templates/orders.json"
+      "template": "templates/customers.json"
     }
   },
   "oauth2": {
