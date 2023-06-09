@@ -10,12 +10,12 @@
   "operations": {
     "customers-delete": {
       "method": "DELETE",
-      "url": "api/biz/customers/{{ entity.ID }}"
+      "url": "api/biz/customers/{{ entity['$source']['ID'] }}"
     },
     "customers-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/customers/{{ entity.ID }}"
+      "url": "api/biz/customers/{{ entity['$source']['ID'] }}"
     },
     "customers-list": {
       "id_expression": "{{ ID }}",
@@ -24,21 +24,21 @@
     },
     "customers-lookup": {
       "method": "GET",
-      "url": "api/biz/customers/{{ entity.ID }}"
+      "url": "api/biz/customers/{{ entity['$source']['ID']}}"
     },
     "customers-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/customers/{{ entity.ID }}"
+      "url": "api/biz/customers/{{ entity['$source']['ID']}}"
     },
     "contacts-delete": {
       "method": "DELETE",
-      "url": "api/biz/contacts/{{ entity.ID }}"
+      "url": "api/biz/contacts/{{ entity['$source']['ID'] }}"
     },
     "contacts-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/contacts/{{ entity.ID }}"
+      "url": "api/biz/contacts/{{ entity['$source']['ID'] }}"
     },
     "contacts-list": {
       "id_expression": "{{ ID }}",
@@ -47,21 +47,21 @@
     },
     "contacts-lookup": {
       "method": "GET",
-      "url": "api/biz/contacts/{{ entity.ID }}"
+      "url": "api/biz/contacts/{{ entity['$source']['ID'] }}"
     },
     "contacts-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/contacts/{{ entity.ID }}"
+      "url": "api/biz/contacts/{{ entity['$source']['ID'] }}"
     },
     "departments-delete": {
       "method": "DELETE",
-      "url": "api/biz/departments/{{ entity.ID }}"
+      "url": "api/biz/departments/{{ entity['$source']['ID'] }}"
     },
     "departments-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/departments/{{ entity.ID }}"
+      "url": "api/biz/departments/{{ entity['$source']['ID'] }}"
     },
     "departments-list": {
       "id_expression": "{{ ID }}",
@@ -70,21 +70,21 @@
     },
     "departments-lookup": {
       "method": "GET",
-      "url": "api/biz/departments/{{ entity.ID }}"
+      "url": "api/biz/departments/{{ entity['$source']['ID'] }}"
     },
     "departments-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/departments/{{ entity.ID }}"
+      "url": "api/biz/departments/{{ entity['$source']['ID'] }}"
     },
     "dimensions-delete": {
       "method": "DELETE",
-      "url": "api/biz/dimensions/{{ entity.ID }}"
+      "url": "api/biz/dimensions/{{ entity['$source']['ID'] }}"
     },
     "dimensions-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/dimensions/{{ entity.ID }}"
+      "url": "api/biz/dimensions/{{ entity['$source']['ID'] }}"
     },
     "dimensions-list": {
       "id_expression": "{{ ID }}",
@@ -93,21 +93,21 @@
     },
     "dimensions-lookup": {
       "method": "GET",
-      "url": "api/biz/dimensions/{{ entity.ID }}"
+      "url": "api/biz/dimensions/{{ entity['$source']['ID'] }}"
     },
     "dimensions-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/dimensions/{{ entity.ID }}"
+      "url": "api/biz/dimensions/{{ entity['$source']['ID'] }}"
     },
     "employees-delete": {
       "method": "DELETE",
-      "url": "api/biz/employees/{{ entity.ID }}"
+      "url": "api/biz/employees/{{ entity['$source']['ID'] }}"
     },
     "employees-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/employees/{{ entity.ID }}"
+      "url": "api/biz/employees/{{ entity['$source']['ID'] }}"
     },
     "employees-list": {
       "id_expression": "{{ ID }}",
@@ -116,21 +116,21 @@
     },
     "employees-lookup": {
       "method": "GET",
-      "url": "api/biz/employees/{{ entity.ID }}"
+      "url": "api/biz/employees/{{ entity['$source']['ID'] }}"
     },
     "employees-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/employees/{{ entity.ID }}"
+      "url": "api/biz/employees/{{ entity['$source']['ID'] }}"
     },
     "orderitems-delete": {
       "method": "DELETE",
-      "url": "api/biz/orderitems/{{ entity.ID }}"
+      "url": "api/biz/orderitems/{{ entity['$source']['ID'] }}"
     },
     "orderitems-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/orderitems/{{ entity.ID }}"
+      "url": "api/biz/orderitems/{{ entity['$source']['ID'] }}"
     },
     "orderitems-list": {
       "id_expression": "{{ ID }}",
@@ -139,21 +139,21 @@
     },
     "orderitems-lookup": {
       "method": "GET",
-      "url": "api/biz/orderitems/{{ entity.ID }}"
+      "url": "api/biz/orderitems/{{ entity['$source']['ID'] }}"
     },
     "orderitems-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/orderitems/{{ entity.ID }}"
+      "url": "api/biz/orderitems/{{ entity['$source']['ID'] }}"
     },
     "orders-delete": {
       "method": "DELETE",
-      "url": "api/biz/orders/{{ entity.ID }}"
+      "url": "api/biz/orders/{{ entity['$source']['ID'] }}"
     },
     "orders-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/orders/{{ entity.ID }}"
+      "url": "api/biz/orders/{{ entity['$source']['ID'] }}"
     },
     "orders-list": {
       "id_expression": "{{ ID }}",
@@ -162,21 +162,21 @@
     },
     "orders-lookup": {
       "method": "GET",
-      "url": "api/biz/orders/{{ entity.ID }}"
+      "url": "api/biz/orders/{{ entity['$source']['ID'] }}"
     },
     "orders-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/orders/{{ entity.ID }}"
+      "url": "api/biz/orders/{{ entity['$source']['ID'] }}"
     },
     "projects-delete": {
       "method": "DELETE",
-      "url": "api/biz/projects/{{ entity.ID }}"
+      "url": "api/biz/projects/{{ entity['$source']['ID'] }}"
     },
     "projects-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/projects/{{ entity.ID }}"
+      "url": "api/biz/projects/{{ entity['$source']['ID'] }}"
     },
     "projects-list": {
       "id_expression": "{{ ID }}",
@@ -185,21 +185,21 @@
     },
     "projects-lookup": {
       "method": "GET",
-      "url": "api/biz/projects/{{ entity.ID }}"
+      "url": "api/biz/projects/{{ entity['$source']['ID'] }}"
     },
     "projects-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/projects/{{ entity.ID }}"
+      "url": "api/biz/projects/{{ entity['$source']['ID'] }}"
     },
     "products-delete": {
       "method": "DELETE",
-      "url": "api/biz/products/{{ entity.ID }}"
+      "url": "api/biz/products/{{ entity['$source']['ID'] }}"
     },
     "products-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/products/{{ entity.ID }}"
+      "url": "api/biz/products/{{ entity['$source']['ID'] }}"
     },
     "products-list": {
       "id_expression": "{{ ID }}",
@@ -208,21 +208,21 @@
     },
     "products-lookup": {
       "method": "GET",
-      "url": "api/biz/products/{{ entity.ID }}"
+      "url": "api/biz/products/{{ entity['$source']['ID'] }}"
     },
     "products-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/products/{{ entity.ID }}"
+      "url": "api/biz/products/{{ entity['$source']['ID'] }}"
     },
     "currencies-delete": {
       "method": "DELETE",
-      "url": "api/biz/currencies/{{ entity.ID }}"
+      "url": "api/biz/currencies/{{ entity['$source']['ID'] }}"
     },
     "currencies-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/currencies/{{ entity.ID }}"
+      "url": "api/biz/currencies/{{ entity['$source']['ID'] }}"
     },
     "currencies-list": {
       "id_expression": "{{ ID }}",
@@ -231,21 +231,21 @@
     },
     "currencies-lookup": {
       "method": "GET",
-      "url": "api/biz/currencies/{{ entity.ID }}"
+      "url": "api/biz/currencies/{{ entity['$source']['ID'] }}"
     },
     "currencies-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/currencies/{{ entity.ID }}"
+      "url": "api/biz/currencies/{{ entity['$source']['ID'] }}"
     },
     "currencycodes-delete": {
       "method": "DELETE",
-      "url": "api/biz/currencycodes/{{ entity.ID }}"
+      "url": "api/biz/currencycodes/{{ entity['$source']['ID'] }}"
     },
     "currencycodes-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/currencycodes/{{ entity.ID }}"
+      "url": "api/biz/currencycodes/{{ entity['$source']['ID'] }}"
     },
     "currencycodes-list": {
       "id_expression": "{{ ID }}",
@@ -254,21 +254,21 @@
     },
     "currencycodes-lookup": {
       "method": "GET",
-      "url": "api/biz/currencycodes/{{ entity.ID }}"
+      "url": "api/biz/currencycodes/{{ entity['$source']['ID'] }}"
     },
     "currencycodes-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/currencycodes/{{ entity.ID }}"
+      "url": "api/biz/currencycodes/{{ entity['$source']['ID'] }}"
     },
     "countries-delete": {
       "method": "DELETE",
-      "url": "api/biz/countries/{{ entity.ID }}"
+      "url": "api/biz/countries/{{ entity['$source']['ID'] }}"
     },
     "countries-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/countries/{{ entity.ID }}"
+      "url": "api/biz/countries/{{ entity['$source']['ID'] }}"
     },
     "countries-list": {
       "id_expression": "{{ ID }}",
@@ -277,21 +277,21 @@
     },
     "countries-lookup": {
       "method": "GET",
-      "url": "api/biz/countries/{{ entity.ID }}"
+      "url": "api/biz/countries/{{ entity['$source']['ID'] }}"
     },
     "countries-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/countries/{{ entity.ID }}"
+      "url": "api/biz/countries/{{ entity['$source']['ID'] }}"
     },
     "companies-delete": {
       "method": "DELETE",
-      "url": "api/biz/companies/{{ entity.ID }}"
+      "url": "api/biz/companies/{{ entity['$source']['ID'] }}"
     },
     "companies-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/companies/{{ entity.ID }}"
+      "url": "api/biz/companies/{{ entity['$source']['ID'] }}"
     },
     "companies-list": {
       "id_expression": "{{ ID }}",
@@ -300,12 +300,12 @@
     },
     "companies-lookup": {
       "method": "GET",
-      "url": "api/biz/companies/{{ entity.ID }}"
+      "url": "api/biz/companies/{{ entity['$source']['ID'] }}"
     },
     "companies-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/companies/{{ entity.ID }}"
+      "url": "api/biz/companies/{{ entity['$source']['ID'] }}"
     }
   },
   "type": "system:rest",
