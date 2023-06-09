@@ -49,6 +49,29 @@
       "method": "GET",
       "url": "api/biz/orders/{{ entity.ID }}"
     },
+    "orderitems-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/orderitems/{{ entity.ID }}"
+    },
+    "orderitems-delete": {
+      "method": "DELETE",
+      "url": "api/biz/orderitems/{{ entity.ID }}"
+    },
+    "orderitems-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/orderitems/{{ entity.ID }}"
+    },
+    "orderitems-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/orderitems"
+    },
+    "orderitems-lookup": {
+      "method": "GET",
+      "url": "api/biz/orderitems/{{ entity.ID }}"
+    },
     "orders-update": {
       "method": "PUT",
       "payload-type": "json",

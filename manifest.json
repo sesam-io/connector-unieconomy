@@ -13,6 +13,9 @@
    "orders": {
       "template": "templates/customers.json"
     },
+   "orderitems": {
+      "template": "templates/customers.json"
+    },
    "products": {
       "template": "templates/customers.json"
     }
