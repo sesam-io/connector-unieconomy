@@ -4,7 +4,19 @@
   },
   "auth": "oauth2",
   "datatypes": {
+    "companies": {
+      "template": "templates/customers.json"
+    },
     "contacts": {
+      "template": "templates/customers.json"
+    },
+    "countries": {
+      "template": "templates/customers.json"
+    },
+    "currencies": {
+      "template": "templates/customers.json"
+    },
+    "currencycodes": {
       "template": "templates/customers.json"
     },
     "customers": {
@@ -29,18 +41,6 @@
       "template": "templates/customers.json"
     },
     "projects": {
-      "template": "templates/customers.json"
-    },
-   "currencies": {
-      "template": "templates/customers.json"
-    },
-   "currencycodes": {
-      "template": "templates/customers.json"
-    },
-   "countries": {
-      "template": "templates/customers.json"
-    },
-   "companies": {
       "template": "templates/customers.json"
     }
   },

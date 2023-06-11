@@ -8,28 +8,28 @@
     "token_url": "{{@ token_url @}}"
   },
   "operations": {
-    "customers-delete": {
+    "companies-delete": {
       "method": "DELETE",
-      "url": "api/biz/customers/{{ entity['$source']['ID'] }}"
+      "url": "api/biz/companies/{{ entity['$source']['ID'] }}"
     },
-    "customers-insert": {
+    "companies-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/customers/{{ entity['$source']['ID'] }}"
+      "url": "api/biz/companies/{{ entity['$source']['ID'] }}"
     },
-    "customers-list": {
+    "companies-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
-      "url": "api/biz/customers"
+      "url": "api/biz/companies"
     },
-    "customers-lookup": {
+    "companies-lookup": {
       "method": "GET",
-      "url": "api/biz/customers/{{ entity['$source']['ID']}}"
+      "url": "api/biz/companies/{{ entity['$source']['ID'] }}"
     },
-    "customers-update": {
+    "companies-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/customers/{{ entity['$source']['ID']}}"
+      "url": "api/biz/companies/{{ entity['$source']['ID'] }}"
     },
     "contacts-delete": {
       "method": "DELETE",
@@ -53,6 +53,98 @@
       "method": "PUT",
       "payload-type": "json",
       "url": "api/biz/contacts/{{ entity['$source']['ID'] }}"
+    },
+    "countries-delete": {
+      "method": "DELETE",
+      "url": "api/biz/countries/{{ entity['$source']['ID'] }}"
+    },
+    "countries-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/countries/{{ entity['$source']['ID'] }}"
+    },
+    "countries-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/countries"
+    },
+    "countries-lookup": {
+      "method": "GET",
+      "url": "api/biz/countries/{{ entity['$source']['ID'] }}"
+    },
+    "countries-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/countries/{{ entity['$source']['ID'] }}"
+    },
+    "currencies-delete": {
+      "method": "DELETE",
+      "url": "api/biz/currencies/{{ entity['$source']['ID'] }}"
+    },
+    "currencies-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/currencies/{{ entity['$source']['ID'] }}"
+    },
+    "currencies-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/currencies"
+    },
+    "currencies-lookup": {
+      "method": "GET",
+      "url": "api/biz/currencies/{{ entity['$source']['ID'] }}"
+    },
+    "currencies-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/currencies/{{ entity['$source']['ID'] }}"
+    },
+    "currencycodes-delete": {
+      "method": "DELETE",
+      "url": "api/biz/currencycodes/{{ entity['$source']['ID'] }}"
+    },
+    "currencycodes-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/currencycodes/{{ entity['$source']['ID'] }}"
+    },
+    "currencycodes-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/currencycodes"
+    },
+    "currencycodes-lookup": {
+      "method": "GET",
+      "url": "api/biz/currencycodes/{{ entity['$source']['ID'] }}"
+    },
+    "currencycodes-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/currencycodes/{{ entity['$source']['ID'] }}"
+    },
+    "customers-delete": {
+      "method": "DELETE",
+      "url": "api/biz/customers/{{ entity['$source']['ID'] }}"
+    },
+    "customers-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/customers/{{ entity['$source']['ID'] }}"
+    },
+    "customers-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/customers"
+    },
+    "customers-lookup": {
+      "method": "GET",
+      "url": "api/biz/customers/{{ entity['$source']['ID']}}"
+    },
+    "customers-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/customers/{{ entity['$source']['ID']}}"
     },
     "departments-delete": {
       "method": "DELETE",
@@ -169,29 +261,6 @@
       "payload-type": "json",
       "url": "api/biz/orders/{{ entity['$source']['ID'] }}"
     },
-    "projects-delete": {
-      "method": "DELETE",
-      "url": "api/biz/projects/{{ entity['$source']['ID'] }}"
-    },
-    "projects-insert": {
-      "method": "POST",
-      "payload-type": "json",
-      "url": "api/biz/projects/{{ entity['$source']['ID'] }}"
-    },
-    "projects-list": {
-      "id_expression": "{{ ID }}",
-      "method": "GET",
-      "url": "api/biz/projects"
-    },
-    "projects-lookup": {
-      "method": "GET",
-      "url": "api/biz/projects/{{ entity['$source']['ID'] }}"
-    },
-    "projects-update": {
-      "method": "PUT",
-      "payload-type": "json",
-      "url": "api/biz/projects/{{ entity['$source']['ID'] }}"
-    },
     "products-delete": {
       "method": "DELETE",
       "url": "api/biz/products/{{ entity['$source']['ID'] }}"
@@ -215,97 +284,28 @@
       "payload-type": "json",
       "url": "api/biz/products/{{ entity['$source']['ID'] }}"
     },
-    "currencies-delete": {
+    "projects-delete": {
       "method": "DELETE",
-      "url": "api/biz/currencies/{{ entity['$source']['ID'] }}"
+      "url": "api/biz/projects/{{ entity['$source']['ID'] }}"
     },
-    "currencies-insert": {
+    "projects-insert": {
       "method": "POST",
       "payload-type": "json",
-      "url": "api/biz/currencies/{{ entity['$source']['ID'] }}"
+      "url": "api/biz/projects/{{ entity['$source']['ID'] }}"
     },
-    "currencies-list": {
+    "projects-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
-      "url": "api/biz/currencies"
+      "url": "api/biz/projects"
     },
-    "currencies-lookup": {
+    "projects-lookup": {
       "method": "GET",
-      "url": "api/biz/currencies/{{ entity['$source']['ID'] }}"
+      "url": "api/biz/projects/{{ entity['$source']['ID'] }}"
     },
-    "currencies-update": {
+    "projects-update": {
       "method": "PUT",
       "payload-type": "json",
-      "url": "api/biz/currencies/{{ entity['$source']['ID'] }}"
-    },
-    "currencycodes-delete": {
-      "method": "DELETE",
-      "url": "api/biz/currencycodes/{{ entity['$source']['ID'] }}"
-    },
-    "currencycodes-insert": {
-      "method": "POST",
-      "payload-type": "json",
-      "url": "api/biz/currencycodes/{{ entity['$source']['ID'] }}"
-    },
-    "currencycodes-list": {
-      "id_expression": "{{ ID }}",
-      "method": "GET",
-      "url": "api/biz/currencycodes"
-    },
-    "currencycodes-lookup": {
-      "method": "GET",
-      "url": "api/biz/currencycodes/{{ entity['$source']['ID'] }}"
-    },
-    "currencycodes-update": {
-      "method": "PUT",
-      "payload-type": "json",
-      "url": "api/biz/currencycodes/{{ entity['$source']['ID'] }}"
-    },
-    "countries-delete": {
-      "method": "DELETE",
-      "url": "api/biz/countries/{{ entity['$source']['ID'] }}"
-    },
-    "countries-insert": {
-      "method": "POST",
-      "payload-type": "json",
-      "url": "api/biz/countries/{{ entity['$source']['ID'] }}"
-    },
-    "countries-list": {
-      "id_expression": "{{ ID }}",
-      "method": "GET",
-      "url": "api/biz/countries"
-    },
-    "countries-lookup": {
-      "method": "GET",
-      "url": "api/biz/countries/{{ entity['$source']['ID'] }}"
-    },
-    "countries-update": {
-      "method": "PUT",
-      "payload-type": "json",
-      "url": "api/biz/countries/{{ entity['$source']['ID'] }}"
-    },
-    "companies-delete": {
-      "method": "DELETE",
-      "url": "api/biz/companies/{{ entity['$source']['ID'] }}"
-    },
-    "companies-insert": {
-      "method": "POST",
-      "payload-type": "json",
-      "url": "api/biz/companies/{{ entity['$source']['ID'] }}"
-    },
-    "companies-list": {
-      "id_expression": "{{ ID }}",
-      "method": "GET",
-      "url": "api/biz/companies"
-    },
-    "companies-lookup": {
-      "method": "GET",
-      "url": "api/biz/companies/{{ entity['$source']['ID'] }}"
-    },
-    "companies-update": {
-      "method": "PUT",
-      "payload-type": "json",
-      "url": "api/biz/companies/{{ entity['$source']['ID'] }}"
+      "url": "api/biz/projects/{{ entity['$source']['ID'] }}"
     }
   },
   "type": "system:rest",
