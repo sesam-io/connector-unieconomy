@@ -1,0 +1,67 @@
+{
+  "$id": "/api/pipes/xxxxxx-employees-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "BirthDate": {
+      "type": "string",
+      "description": "Datetime in ISO format"
+    },
+    "DeniedSickDays": {
+      "type": "string",
+      "description": "Datetime in ISO format"
+    },
+    "EmployeeLedgerID": {
+      "type": "integer"
+    },
+    "EmploymentDate": {
+      "type": "string",
+      "description": "Datetime in ISO format"
+    },
+    "EmploymentDateOtp": {
+      "type": "string",
+      "description": "Datetime in ISO format"
+    },
+    "EndDate": {
+      "type": "string",
+      "description": "Datetime in ISO format"
+    },
+    "EndDateOtp": {
+      "type": "string",
+      "description": "Datetime in ISO format"
+    },
+    "FreeText": {
+      "type": "string"
+    },
+    "InternasjonalIDCountry": {
+      "type": "string"
+    },
+    "InternationalID": {
+      "type": "integer"
+    },
+    "MunicipalityNo": {
+      "type": "string"
+    },
+    "PhotoID": {
+      "type": "integer"
+    },
+    "SocialSecurityNumber": {
+      "type": "string"
+    },
+    "StatusCode": {
+      "type": "integer"
+    },
+    "UpdatedAt": {
+      "type": "string",
+      "description": "Datetime in ISO format"
+    },
+    "UpdatedBy": {
+      "type": "string"
+    },
+    "UserID": {
+      "type": "integer"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-employees-collect",
+  "type": "object"
+}

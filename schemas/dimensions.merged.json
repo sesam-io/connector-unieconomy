@@ -1,0 +1,87 @@
+{
+  "$id": "/api/pipes/xxxxxx-dimensions-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "$last-modified": {
+      "subtype": "nanoseconds",
+      "type": "string"
+    },
+    "CreatedAt": {
+      "type": "string"
+    },
+    "CreatedBy": {
+      "type": "string"
+    },
+    "CustomValues": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "Deleted": {
+      "type": "boolean"
+    },
+    "DepartmentID": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "Dimension10ID": {
+      "type": "integer"
+    },
+    "Dimension5ID": {
+      "type": "integer"
+    },
+    "Dimension6ID": {
+      "type": "integer"
+    },
+    "Dimension7ID": {
+      "type": "integer"
+    },
+    "Dimension8ID": {
+      "type": "integer"
+    },
+    "Dimension9ID": {
+      "type": "integer"
+    },
+    "ID": {
+      "type": "integer"
+    },
+    "ProjectID": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "ProjectTaskID": {
+      "type": "integer"
+    },
+    "RegionID": {
+      "type": "integer"
+    },
+    "ResponsibleID": {
+      "type": "integer"
+    },
+    "StatusCode": {
+      "type": "integer"
+    },
+    "UpdatedAt": {
+      "description": "Datetime in ISO format",
+      "type": "string"
+    },
+    "UpdatedBy": {
+      "type": "string"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-dimensions-collect",
+  "type": "object"
+}

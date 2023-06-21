@@ -1,0 +1,70 @@
+{
+  "$id": "/api/pipes/xxxxxx-currencycodes-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "$last-modified": {
+      "anyOf": [
+        {
+          "subtype": "nanoseconds",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "Code": {
+      "type": "string"
+    },
+    "CreatedAt": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "CreatedBy": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "CustomValues": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "Deleted": {
+      "type": "boolean"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "ID": {
+      "type": "integer"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "ShortCode": {
+      "type": "string"
+    },
+    "UpdatedAt": {
+      "description": "Datetime in ISO format",
+      "type": "string"
+    },
+    "UpdatedBy": {
+      "type": "string"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-currencycodes-collect",
+  "type": "object"
+}

@@ -1,0 +1,24 @@
+{
+  "$id": "/api/pipes/xxxxxx-orderitems-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "BuyersItemIdentification": {
+      "type": "string"
+    },
+    "Comment": {
+      "type": "string"
+    },
+    "ExternalReference": {
+      "type": "string"
+    },
+    "ItemSourceID": {
+      "type": "integer"
+    },
+    "OrderLineReference": {
+      "type": "string"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-orderitems-collect",
+  "type": "object"
+}

@@ -1,0 +1,95 @@
+{
+  "$id": "/api/pipes/xxxxxx-projects-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "$last-modified": {
+      "subtype": "nanoseconds",
+      "type": "string"
+    },
+    "AGAZoneID": {
+      "type": "integer"
+    },
+    "Amount": {
+      "type": "integer"
+    },
+    "CostPrice": {
+      "type": "integer"
+    },
+    "CreatedAt": {
+      "type": "string"
+    },
+    "CreatedBy": {
+      "type": "string"
+    },
+    "CustomValues": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "Deleted": {
+      "type": "boolean"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "DimensionsID": {
+      "type": "integer"
+    },
+    "EndDate": {
+      "description": "A date in ISO format (YYYY-MM-DD)",
+      "type": "string"
+    },
+    "ID": {
+      "type": "integer"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "PlannedEnddate": {
+      "type": "string"
+    },
+    "PlannedStartdate": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "integer"
+    },
+    "ProjectCustomerID": {
+      "type": "integer"
+    },
+    "ProjectLeadName": {
+      "type": "string"
+    },
+    "ProjectNumber": {
+      "type": "string"
+    },
+    "ProjectNumberNumeric": {
+      "type": "integer"
+    },
+    "ProjectNumberSeriesID": {
+      "type": "integer"
+    },
+    "StartDate": {
+      "description": "A date in ISO format (YYYY-MM-DD)",
+      "type": "string"
+    },
+    "StatusCode": {
+      "type": "integer"
+    },
+    "Total": {
+      "type": "integer"
+    },
+    "UpdatedAt": {
+      "type": "string"
+    },
+    "UpdatedBy": {
+      "type": "string"
+    },
+    "WorkPlaceAddressID": {
+      "type": "integer"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-projects-collect",
+  "type": "object"
+}

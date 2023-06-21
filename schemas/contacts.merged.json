@@ -1,0 +1,206 @@
+{
+  "$id": "/api/pipes/xxxxxx-contacts-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "$last-modified": {
+      "anyOf": [
+        {
+          "subtype": "nanoseconds",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "Comment": {
+      "type": "string"
+    },
+    "CreatedAt": {
+      "type": "string"
+    },
+    "CreatedBy": {
+      "type": "string"
+    },
+    "CustomValues": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "Deleted": {
+      "type": "boolean"
+    },
+    "ID": {
+      "type": "integer"
+    },
+    "Info": {
+      "additionalProperties": true,
+      "properties": {
+        "CreatedAt": {
+          "type": "string"
+        },
+        "CreatedBy": {
+          "type": "string"
+        },
+        "CustomValues": {
+          "additionalProperties": true,
+          "properties": {},
+          "type": "object"
+        },
+        "DefaultBankAccountID": {
+          "type": "null"
+        },
+        "DefaultContactID": {
+          "type": "null"
+        },
+        "DefaultEmail": {
+          "additionalProperties": true,
+          "properties": {
+            "BusinessRelationID": {
+              "type": "integer"
+            },
+            "CreatedAt": {
+              "type": "string"
+            },
+            "CreatedBy": {
+              "type": "string"
+            },
+            "CustomValues": {
+              "additionalProperties": true,
+              "properties": {},
+              "type": "object"
+            },
+            "Deleted": {
+              "type": "boolean"
+            },
+            "Description": {
+              "type": "null"
+            },
+            "EmailAddress": {
+              "type": "string"
+            },
+            "ID": {
+              "type": "integer"
+            },
+            "StatusCode": {
+              "type": "null"
+            },
+            "Type": {
+              "type": "null"
+            },
+            "UpdatedAt": {
+              "type": "null"
+            },
+            "UpdatedBy": {
+              "type": "null"
+            }
+          },
+          "type": "object"
+        },
+        "DefaultEmailID": {
+          "type": "integer"
+        },
+        "DefaultPhone": {
+          "additionalProperties": true,
+          "properties": {
+            "BusinessRelationID": {
+              "type": "integer"
+            },
+            "CountryCode": {
+              "type": "null"
+            },
+            "CreatedAt": {
+              "type": "string"
+            },
+            "CreatedBy": {
+              "type": "string"
+            },
+            "CustomValues": {
+              "additionalProperties": true,
+              "properties": {},
+              "type": "object"
+            },
+            "Deleted": {
+              "type": "boolean"
+            },
+            "Description": {
+              "type": "null"
+            },
+            "ID": {
+              "type": "integer"
+            },
+            "Number": {
+              "type": "string"
+            },
+            "StatusCode": {
+              "type": "null"
+            },
+            "Type": {
+              "type": "integer"
+            },
+            "UpdatedAt": {
+              "type": "null"
+            },
+            "UpdatedBy": {
+              "type": "null"
+            }
+          },
+          "type": "object"
+        },
+        "DefaultPhoneID": {
+          "type": "integer"
+        },
+        "Deleted": {
+          "type": "boolean"
+        },
+        "ID": {
+          "type": "integer"
+        },
+        "InvoiceAddress": {
+          "type": "null"
+        },
+        "InvoiceAddressID": {
+          "type": "null"
+        },
+        "Name": {
+          "type": "string"
+        },
+        "ShippingAddressID": {
+          "type": "null"
+        },
+        "StatusCode": {
+          "type": "null"
+        },
+        "UpdatedAt": {
+          "type": "null"
+        },
+        "UpdatedBy": {
+          "type": "null"
+        }
+      },
+      "type": "object"
+    },
+    "InfoID": {
+      "type": "integer"
+    },
+    "ParentBusinessRelationID": {
+      "type": "integer"
+    },
+    "Role": {
+      "type": "string"
+    },
+    "StatusCode": {
+      "type": "integer"
+    },
+    "UpdatedAt": {
+      "description": "Datetime in ISO format",
+      "type": "string"
+    },
+    "UpdatedBy": {
+      "type": "string"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-contacts-collect",
+  "type": "object"
+}

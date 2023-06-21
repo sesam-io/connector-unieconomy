@@ -1,0 +1,124 @@
+{
+  "$id": "/api/pipes/xxxxxx-products-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "$last-modified": {
+      "subtype": "nanoseconds",
+      "type": "string"
+    },
+    "AccountID": {
+      "type": "integer"
+    },
+    "AverageCost": {
+      "type": "integer"
+    },
+    "CalculateGrossPriceBasedOnNetPrice": {
+      "type": "boolean"
+    },
+    "CostPrice": {
+      "type": "integer"
+    },
+    "CreatedAt": {
+      "type": "string"
+    },
+    "CreatedBy": {
+      "type": "string"
+    },
+    "CustomValues": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "DefaultProductCategoryID": {
+      "type": "integer"
+    },
+    "DefaultVatTypeAccountsID": {
+      "type": "integer"
+    },
+    "Deleted": {
+      "type": "boolean"
+    },
+    "Description": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "DimensionsID": {
+      "type": "integer"
+    },
+    "ExternalProductNumber": {
+      "type": "string"
+    },
+    "ID": {
+      "type": "integer"
+    },
+    "ImageFileID": {
+      "type": "integer"
+    },
+    "ListPrice": {
+      "type": "integer"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "PartName": {
+      "type": "string"
+    },
+    "PriceExVat": {
+      "type": "integer"
+    },
+    "PriceIncVat": {
+      "type": "integer"
+    },
+    "StatusCode": {
+      "type": "integer"
+    },
+    "Type": {
+      "type": "integer"
+    },
+    "Unit": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "UpdatedAt": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "UpdatedBy": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "VariansParentID": {
+      "type": "integer"
+    },
+    "VatTypeID": {
+      "type": "integer"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-products-collect",
+  "type": "object"
+}

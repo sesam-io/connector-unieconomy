@@ -1,0 +1,56 @@
+{
+  "$id": "/api/pipes/xxxxxx-countries-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "$last-modified": {
+      "type": "null"
+    },
+    "CountryCode": {
+      "type": "string"
+    },
+    "CreatedAt": {
+      "description": "Datetime in ISO format",
+      "type": "string"
+    },
+    "CreatedBy": {
+      "type": "string"
+    },
+    "CurrencyRateSource": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "CustomValues": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "DefaultCurrencyCode": {
+      "type": "string"
+    },
+    "Deleted": {
+      "type": "boolean"
+    },
+    "ID": {
+      "type": "integer"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "UpdatedAt": {
+      "description": "Datetime in ISO format",
+      "type": "string"
+    },
+    "UpdatedBy": {
+      "type": "string"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-countries-collect",
+  "type": "object"
+}

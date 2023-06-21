@@ -1,0 +1,159 @@
+{
+  "$id": "/api/pipes/xxxxxx-customers-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "$last-modified": {
+      "subtype": "nanoseconds",
+      "type": "string"
+    },
+    "AcceptableDelta4CustomerPayment": {
+      "type": "integer"
+    },
+    "AcceptableDelta4CustomerPaymentAccountID": {
+      "type": "integer"
+    },
+    "AvtaleGiro": {
+      "type": "boolean"
+    },
+    "AvtaleGiroNotification": {
+      "type": "boolean"
+    },
+    "BusinessRelationID": {
+      "type": "integer"
+    },
+    "CalculateInterestOnReminders": {
+      "type": "boolean"
+    },
+    "CreatedAt": {
+      "type": "string"
+    },
+    "CreatedBy": {
+      "type": "string"
+    },
+    "CreditDays": {
+      "type": "integer"
+    },
+    "CurrencyCodeID": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "CustomValues": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "CustomerNumber": {
+      "type": "integer"
+    },
+    "CustomerNumberKidAlias": {
+      "type": "string"
+    },
+    "DefaultCustomerInvoiceReportID": {
+      "type": "integer"
+    },
+    "DefaultCustomerOrderReportID": {
+      "type": "integer"
+    },
+    "DefaultCustomerQuoteReportID": {
+      "type": "integer"
+    },
+    "DefaultDistributionsID": {
+      "type": "integer"
+    },
+    "DefaultSellerID": {
+      "type": "integer"
+    },
+    "Deleted": {
+      "type": "boolean"
+    },
+    "DeliveryTermsID": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "DimensionsID": {
+      "type": "integer"
+    },
+    "DontSendReminders": {
+      "type": "boolean"
+    },
+    "DontUseFactoring": {
+      "type": "boolean"
+    },
+    "EInvoiceAgreementReference": {
+      "type": "string"
+    },
+    "EfakturaIdentifier": {
+      "type": "string"
+    },
+    "FactoringNumber": {
+      "type": "integer"
+    },
+    "GLN": {
+      "type": "string"
+    },
+    "ID": {
+      "type": "integer"
+    },
+    "InvoiceChargeID": {
+      "type": "integer"
+    },
+    "IsPrivate": {
+      "type": "boolean"
+    },
+    "Localization": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "OrgNumber": {
+      "type": "string"
+    },
+    "PaymentTermsID": {
+      "type": "integer"
+    },
+    "PeppolAddress": {
+      "type": "string"
+    },
+    "ReminderEmailAddress": {
+      "type": "string"
+    },
+    "SocialSecurityNumber": {
+      "type": "string"
+    },
+    "StatusCode": {
+      "type": "integer"
+    },
+    "SubAccountNumberSeriesID": {
+      "type": "integer"
+    },
+    "UpdatedAt": {
+      "type": "string"
+    },
+    "UpdatedBy": {
+      "type": "string"
+    },
+    "WebUrl": {
+      "type": "string"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-customers-collect",
+  "type": "object"
+}

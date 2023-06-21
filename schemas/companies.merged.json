@@ -1,0 +1,72 @@
+{
+  "$id": "/api/pipes/xxxxxx-companies-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "$last-modified": {
+      "subtype": "nanoseconds",
+      "type": "string"
+    },
+    "ClientNumber": {
+      "type": "integer"
+    },
+    "CreatedAt": {
+      "description": "Datetime in ISO format",
+      "type": "string"
+    },
+    "CreatedBy": {
+      "type": "string"
+    },
+    "Deleted": {
+      "type": "boolean"
+    },
+    "FileFlowEmail": {
+      "type": "string"
+    },
+    "FileFlowOrgnrEmail": {
+      "type": "string"
+    },
+    "ID": {
+      "type": "integer"
+    },
+    "IsGlobalTemplate": {
+      "type": "boolean"
+    },
+    "IsTemplate": {
+      "type": "boolean"
+    },
+    "IsTest": {
+      "type": "boolean"
+    },
+    "Key": {
+      "type": "string"
+    },
+    "LastActivity": {
+      "type": "string"
+    },
+    "MigrationVersion": {
+      "type": "integer"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "OrganizationNumber": {
+      "type": "string"
+    },
+    "StatusCode": {
+      "type": "integer"
+    },
+    "UpdatedAt": {
+      "type": "string"
+    },
+    "UpdatedBy": {
+      "type": "string"
+    },
+    "WebHookSubscriberId": {
+      "description": "Not documented in the API docs",
+      "type": "string"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-companies-collect",
+  "type": "object"
+}

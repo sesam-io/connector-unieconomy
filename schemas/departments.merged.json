@@ -1,0 +1,58 @@
+{
+  "$id": "/api/pipes/xxxxxx-departments-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "$last-modified": {
+      "subtype": "nanoseconds",
+      "type": "string"
+    },
+    "CreatedAt": {
+      "type": "string"
+    },
+    "CreatedBy": {
+      "type": "string"
+    },
+    "CustomValues": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "Deleted": {
+      "type": "boolean"
+    },
+    "DepartmentManagerName": {
+      "type": "string"
+    },
+    "DepartmentNumber": {
+      "type": "string"
+    },
+    "DepartmentNumberNumeric": {
+      "type": "integer"
+    },
+    "DepartmentNumberSeriesID": {
+      "type": "integer"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "ID": {
+      "type": "integer"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "StatusCode": {
+      "type": "integer"
+    },
+    "UpdatedAt": {
+      "description": "Datetime in ISO format",
+      "type": "string"
+    },
+    "UpdatedBy": {
+      "type": "string"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-departments-collect",
+  "type": "object"
+}
