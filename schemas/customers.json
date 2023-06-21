@@ -1,0 +1,63 @@
+{
+  "$id": "/api/pipes/xxxxxx-customers-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "AcceptableDelta4CustomerPaymentAccountID": {
+      "type": "integer"
+    },
+    "CreditDays": {
+      "type": "integer"
+    },
+    "CustomerNumberKidAlias": {
+      "type": "string"
+    },
+    "DefaultCustomerInvoiceReportID": {
+      "type": "integer"
+    },
+    "DefaultCustomerOrderReportID": {
+      "type": "integer"
+    },
+    "DefaultCustomerQuoteReportID": {
+      "type": "integer"
+    },
+    "DefaultDistributionsID": {
+      "type": "integer"
+    },
+    "DefaultSellerID": {
+      "type": "integer"
+    },
+    "DimensionsID": {
+      "type": "integer"
+    },
+    "EInvoiceAgreementReference": {
+      "type": "string"
+    },
+    "EfakturaIdentifier": {
+      "type": "string"
+    },
+    "FactoringNumber": {
+      "type": "integer"
+    },
+    "GLN": {
+      "type": "string"
+    },
+    "InvoiceChargeID": {
+      "type": "integer"
+    },
+    "PaymentTermsID": {
+      "type": "integer"
+    },
+    "PeppolAddress": {
+      "type": "string"
+    },
+    "ReminderEmailAddress": {
+      "type": "string"
+    },
+    "SocialSecurityNumber": {
+      "type": "string"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-customers-collect",
+  "type": "object"
+}

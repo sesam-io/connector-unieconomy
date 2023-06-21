@@ -1,0 +1,19 @@
+{
+  "$id": "/api/pipes/xxxxxx-currencycodes-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "Description": {
+      "type": "string"
+    },
+    "UpdatedAt": {
+      "type": "string",
+      "description": "Datetime in ISO format"
+    },
+    "UpdatedBy": {
+      "type": "string"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-currencycodes-collect",
+  "type": "object"
+}

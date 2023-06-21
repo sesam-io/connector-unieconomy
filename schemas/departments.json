@@ -1,0 +1,19 @@
+{
+  "$id": "/api/pipes/xxxxxx-departments-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "StatusCode": {
+      "type": "integer"
+    },
+    "UpdatedAt": {
+      "type": "string",
+      "description": "Datetime in ISO format"
+    },
+    "UpdatedBy": {
+      "type": "string"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-departments-collect",
+  "type": "object"
+}

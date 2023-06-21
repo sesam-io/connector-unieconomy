@@ -1,0 +1,240 @@
+{
+  "$id": "/api/pipes/xxxxxx-orders-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "$last-modified": {
+      "subtype": "nanoseconds",
+      "type": "string"
+    },
+    "AccrualID": {
+      "type": "integer"
+    },
+    "Comment": {
+      "type": "string"
+    },
+    "ContractDocumentReference": {
+      "type": "string"
+    },
+    "ContributionMarginAmount": {
+      "type": "integer"
+    },
+    "ContributionPercent": {
+      "subtype": "decimal",
+      "type": "string"
+    },
+    "CostPriceAmount": {
+      "type": "integer"
+    },
+    "CreatedAt": {
+      "type": "string"
+    },
+    "CreatedBy": {
+      "type": "string"
+    },
+    "CreditDays": {
+      "type": "integer"
+    },
+    "CurrencyCodeID": {
+      "type": "integer"
+    },
+    "CurrencyExchangeRate": {
+      "type": "integer"
+    },
+    "CustomValues": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "CustomerID": {
+      "type": "integer"
+    },
+    "CustomerName": {
+      "type": "string"
+    },
+    "CustomerOrgNumber": {
+      "type": "string"
+    },
+    "CustomerPerson": {
+      "type": "string"
+    },
+    "DefaultDimensionsID": {
+      "type": "integer"
+    },
+    "DefaultSellerID": {
+      "type": "integer"
+    },
+    "Deleted": {
+      "type": "boolean"
+    },
+    "DeliveryDate": {
+      "type": "string"
+    },
+    "DeliveryMethod": {
+      "type": "string"
+    },
+    "DeliveryName": {
+      "type": "string"
+    },
+    "DeliveryTerm": {
+      "type": "string"
+    },
+    "DeliveryTermsID": {
+      "type": "integer"
+    },
+    "DistributionPlanID": {
+      "type": "integer"
+    },
+    "EmailAddress": {
+      "type": "string"
+    },
+    "FreeTxt": {
+      "type": "string"
+    },
+    "ID": {
+      "type": "integer"
+    },
+    "InternalNote": {
+      "type": "string"
+    },
+    "InvoiceAddressLine1": {
+      "type": "string"
+    },
+    "InvoiceAddressLine2": {
+      "type": "string"
+    },
+    "InvoiceAddressLine3": {
+      "type": "string"
+    },
+    "InvoiceCity": {
+      "type": "string"
+    },
+    "InvoiceCountry": {
+      "type": "string"
+    },
+    "InvoiceCountryCode": {
+      "type": "string"
+    },
+    "InvoicePostalCode": {
+      "type": "string"
+    },
+    "InvoiceReceiverName": {
+      "type": "string"
+    },
+    "OrderDate": {
+      "type": "string"
+    },
+    "OrderNumber": {
+      "type": "integer"
+    },
+    "OrderNumberSeriesID": {
+      "type": "integer"
+    },
+    "OurReference": {
+      "type": "string"
+    },
+    "PayableRoundingAmount": {
+      "type": "integer"
+    },
+    "PayableRoundingCurrencyAmount": {
+      "type": "integer"
+    },
+    "PaymentInfoTypeID": {
+      "type": "integer"
+    },
+    "PaymentTerm": {
+      "type": "string"
+    },
+    "PaymentTermsID": {
+      "type": "integer"
+    },
+    "PrintStatus": {
+      "type": "integer"
+    },
+    "ReadyToInvoice": {
+      "type": "boolean"
+    },
+    "Requisition": {
+      "type": "string"
+    },
+    "RestAmountCurrency": {
+      "subtype": "decimal",
+      "type": "string"
+    },
+    "RestExclusiveAmountCurrency": {
+      "type": "integer"
+    },
+    "SalesPerson": {
+      "type": "string"
+    },
+    "ShippingAddressLine1": {
+      "type": "string"
+    },
+    "ShippingAddressLine2": {
+      "type": "string"
+    },
+    "ShippingAddressLine3": {
+      "type": "string"
+    },
+    "ShippingCity": {
+      "type": "string"
+    },
+    "ShippingCountry": {
+      "type": "string"
+    },
+    "ShippingCountryCode": {
+      "type": "string"
+    },
+    "ShippingPostalCode": {
+      "type": "string"
+    },
+    "StatusCode": {
+      "type": "integer"
+    },
+    "SupplierOrgNumber": {
+      "type": "string"
+    },
+    "TaxExclusiveAmount": {
+      "type": "integer"
+    },
+    "TaxExclusiveAmountCurrency": {
+      "type": "integer"
+    },
+    "TaxInclusiveAmount": {
+      "subtype": "decimal",
+      "type": "string"
+    },
+    "TaxInclusiveAmountCurrency": {
+      "subtype": "decimal",
+      "type": "string"
+    },
+    "UpdateCurrencyAmountsOnDateChange": {
+      "type": "boolean"
+    },
+    "UpdateCurrencyOnToInvoice": {
+      "type": "boolean"
+    },
+    "UpdatedAt": {
+      "type": "string"
+    },
+    "UpdatedBy": {
+      "type": "string"
+    },
+    "UseReportID": {
+      "type": "integer"
+    },
+    "VatTotalsAmount": {
+      "subtype": "decimal",
+      "type": "string"
+    },
+    "VatTotalsAmountCurrency": {
+      "subtype": "decimal",
+      "type": "string"
+    },
+    "YourReference": {
+      "type": "string"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-orders-collect",
+  "type": "object"
+}

@@ -1,0 +1,180 @@
+{
+  "$id": "/api/pipes/xxxxxx-orderitems-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "$last-modified": {
+      "subtype": "nanoseconds",
+      "type": "string"
+    },
+    "AccountID": {
+      "type": "integer"
+    },
+    "BuyersItemIdentification": {
+      "type": "string"
+    },
+    "CalculateGrossPriceBasedOnNetPrice": {
+      "type": "boolean"
+    },
+    "Comment": {
+      "type": "string"
+    },
+    "ContributionMargin": {
+      "type": "integer"
+    },
+    "ContributionPercent": {
+      "subtype": "decimal",
+      "type": "string"
+    },
+    "CostPrice": {
+      "type": "integer"
+    },
+    "CreatedAt": {
+      "type": "string"
+    },
+    "CreatedBy": {
+      "type": "string"
+    },
+    "CurrencyCodeID": {
+      "type": "integer"
+    },
+    "CurrencyExchangeRate": {
+      "type": "integer"
+    },
+    "CustomValues": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "CustomerOrderID": {
+      "type": "integer"
+    },
+    "Deleted": {
+      "type": "boolean"
+    },
+    "DimensionsID": {
+      "type": "integer"
+    },
+    "Discount": {
+      "type": "integer"
+    },
+    "DiscountCurrency": {
+      "type": "integer"
+    },
+    "DiscountPercent": {
+      "type": "integer"
+    },
+    "ExternalReference": {
+      "type": "string"
+    },
+    "ID": {
+      "type": "integer"
+    },
+    "ItemSourceID": {
+      "type": "integer"
+    },
+    "ItemText": {
+      "type": "string"
+    },
+    "NumberOfItems": {
+      "type": "integer"
+    },
+    "OrderLineReference": {
+      "type": "string"
+    },
+    "PriceExVat": {
+      "type": "integer"
+    },
+    "PriceExVatCurrency": {
+      "type": "integer"
+    },
+    "PriceIncVat": {
+      "type": "integer"
+    },
+    "PriceSetByUser": {
+      "type": "boolean"
+    },
+    "ProductID": {
+      "type": "integer"
+    },
+    "ReadyToInvoice": {
+      "type": "boolean"
+    },
+    "SortIndex": {
+      "type": "integer"
+    },
+    "StatusCode": {
+      "type": "integer"
+    },
+    "SumCostPrice": {
+      "type": "integer"
+    },
+    "SumTotalExVat": {
+      "type": "integer"
+    },
+    "SumTotalExVatCurrency": {
+      "type": "integer"
+    },
+    "SumTotalIncVat": {
+      "anyOf": [
+        {
+          "subtype": "decimal",
+          "type": "string"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "SumTotalIncVatCurrency": {
+      "anyOf": [
+        {
+          "subtype": "decimal",
+          "type": "string"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "SumVat": {
+      "anyOf": [
+        {
+          "subtype": "decimal",
+          "type": "string"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "SumVatCurrency": {
+      "anyOf": [
+        {
+          "subtype": "decimal",
+          "type": "string"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "Unit": {
+      "type": "string"
+    },
+    "UpdatedAt": {
+      "type": "string"
+    },
+    "UpdatedBy": {
+      "type": "string"
+    },
+    "VatPercent": {
+      "type": "integer"
+    },
+    "VatTypeID": {
+      "type": "integer"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-orderitems-collect",
+  "type": "object"
+}

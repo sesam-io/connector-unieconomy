@@ -1,0 +1,21 @@
+{
+  "$id": "/api/pipes/xxxxxx-products-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "AverageCost": {
+      "type": "integer"
+    },
+    "ExternalProductNumber": {
+      "type": "string"
+    },
+    "ImageFileID": {
+      "type": "integer"
+    },
+    "ListPrice": {
+      "type": "integer"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-products-collect",
+  "type": "object"
+}

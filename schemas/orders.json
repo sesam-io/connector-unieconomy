@@ -1,0 +1,75 @@
+{
+  "$id": "/api/pipes/xxxxxx-orders-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "AccrualID": {
+      "type": "integer"
+    },
+    "CustomerOrgNumber": {
+      "type": "string"
+    },
+    "CustomerPerson": {
+      "type": "string"
+    },
+    "DeliveryMethod": {
+      "type": "string"
+    },
+    "DeliveryTerm": {
+      "type": "string"
+    },
+    "InternalNote": {
+      "type": "string"
+    },
+    "InvoiceAddressLine2": {
+      "type": "string"
+    },
+    "InvoiceAddressLine3": {
+      "type": "string"
+    },
+    "InvoiceCountry": {
+      "type": "string"
+    },
+    "InvoiceCountryCode": {
+      "type": "string"
+    },
+    "InvoiceReceiverName": {
+      "type": "string"
+    },
+    "PaymentTerm": {
+      "type": "string"
+    },
+    "PaymentTermsID": {
+      "type": "integer"
+    },
+    "PrintStatus": {
+      "type": "integer"
+    },
+    "SalesPerson": {
+      "type": "string"
+    },
+    "ShippingAddressLine2": {
+      "type": "string"
+    },
+    "ShippingAddressLine3": {
+      "type": "string"
+    },
+    "ShippingCountry": {
+      "type": "string"
+    },
+    "ShippingCountryCode": {
+      "type": "string"
+    },
+    "SupplierOrgNumber": {
+      "type": "string"
+    },
+    "UpdateCurrencyAmountsOnDateChange": {
+      "type": "boolean"
+    },
+    "UpdateCurrencyOnToInvoice": {
+      "type": "boolean"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-orders-collect",
+  "type": "object"
+}

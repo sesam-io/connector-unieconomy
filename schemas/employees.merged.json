@@ -1,0 +1,136 @@
+{
+  "$id": "/api/pipes/xxxxxx-employees-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "$last-modified": {
+      "subtype": "nanoseconds",
+      "type": "string"
+    },
+    "Active": {
+      "type": "boolean"
+    },
+    "AdvancePaymentAmount": {
+      "type": "integer"
+    },
+    "BirthDate": {
+      "description": "Datetime in ISO format",
+      "type": "string"
+    },
+    "BusinessRelationID": {
+      "type": "integer"
+    },
+    "CreatedAt": {
+      "type": "string"
+    },
+    "CreatedBy": {
+      "type": "string"
+    },
+    "CustomValues": {
+      "additionalProperties": true,
+      "properties": {},
+      "type": "object"
+    },
+    "Deleted": {
+      "type": "boolean"
+    },
+    "DeniedSickDays": {
+      "description": "Datetime in ISO format",
+      "type": "string"
+    },
+    "EmployeeLanguageID": {
+      "type": "integer"
+    },
+    "EmployeeLedgerID": {
+      "type": "integer"
+    },
+    "EmployeeNumber": {
+      "type": "integer"
+    },
+    "EmploymentDate": {
+      "description": "Datetime in ISO format",
+      "type": "string"
+    },
+    "EmploymentDateOtp": {
+      "description": "Datetime in ISO format",
+      "type": "string"
+    },
+    "EndDate": {
+      "description": "Datetime in ISO format",
+      "type": "string"
+    },
+    "EndDateOtp": {
+      "description": "Datetime in ISO format",
+      "type": "string"
+    },
+    "ForeignWorker": {
+      "type": "integer"
+    },
+    "FreeText": {
+      "type": "string"
+    },
+    "ID": {
+      "type": "integer"
+    },
+    "IncludeOtpUntilMonth": {
+      "type": "integer"
+    },
+    "IncludeOtpUntilYear": {
+      "type": "integer"
+    },
+    "InternasjonalIDCountry": {
+      "type": "string"
+    },
+    "InternasjonalIDType": {
+      "type": "integer"
+    },
+    "InternationalID": {
+      "type": "integer"
+    },
+    "MunicipalityNo": {
+      "type": "string"
+    },
+    "OtpExport": {
+      "type": "boolean"
+    },
+    "OtpStatus": {
+      "type": "integer"
+    },
+    "PaymentInterval": {
+      "type": "integer"
+    },
+    "PhotoID": {
+      "type": "integer"
+    },
+    "Sex": {
+      "type": "integer"
+    },
+    "SingleProvider": {
+      "type": "boolean"
+    },
+    "SocialSecurityNumber": {
+      "type": "string"
+    },
+    "StatusCode": {
+      "type": "integer"
+    },
+    "SubEntityID": {
+      "type": "integer"
+    },
+    "TypeOfPaymentOtp": {
+      "type": "integer"
+    },
+    "UpdatedAt": {
+      "description": "Datetime in ISO format",
+      "type": "string"
+    },
+    "UpdatedBy": {
+      "type": "string"
+    },
+    "UserID": {
+      "type": "integer"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-employees-collect",
+  "type": "object"
+}

@@ -1,0 +1,20 @@
+{
+  "$id": "/api/pipes/xxxxxx-projects-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "DimensionsID": {
+      "type": "integer"
+    },
+    "EndDate": {
+      "type": "string",
+      "description": "A date in ISO format (YYYY-MM-DD)"
+    },
+    "StartDate": {
+      "type": "string",
+      "description": "A date in ISO format (YYYY-MM-DD)"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-projects-collect",
+  "type": "object"
+}

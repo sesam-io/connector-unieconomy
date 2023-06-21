@@ -1,0 +1,29 @@
+{
+  "$id": "/api/pipes/xxxxxx-companies-collect/entity-types/sink",
+  "$schema": "http://json-schema.org/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "ClientNumber": {
+      "type": "integer"
+    },
+    "CreatedAt": {
+      "type": "string",
+      "description": "Datetime in ISO format"
+    },
+    "CreatedBy": {
+      "type": "string"
+    },
+    "FileFlowEmail": {
+      "type": "string"
+    },
+    "FileFlowOrgnrEmail": {
+      "type": "string"
+    },
+    "WebHookSubscriberId": {
+      "type": "string",
+      "description": "Not documented in the API docs"
+    }
+  },
+  "title": "Pipe sink entity type: xxxxxx-companies-collect",
+  "type": "object"
+}
