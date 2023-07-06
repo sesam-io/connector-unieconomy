@@ -135,10 +135,16 @@
     "customers-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "params": {
+        "expand": "Account,BusinessRelation,Info,Info.Phones,Info.DefaultPhone,Info.Addresses,Info.Emails,Info.DefaultEmail,Info.ShippingAddress,Info.InvoiceAddress,Info.DefaultBankAccount,Info.Contacts.Info,Info.Contacts.Info.DefaultEmail,Info.Contacts.Info.DefaultPhone"
+      },
       "url": "api/biz/customers"
     },
     "customers-lookup": {
       "method": "GET",
+      "params": {
+        "expand": "Account,BusinessRelation,Info,Info.Phones,Info.DefaultPhone,Info.Addresses,Info.Emails,Info.DefaultEmail,Info.ShippingAddress,Info.InvoiceAddress,Info.DefaultBankAccount,Info.Contacts.Info,Info.Contacts.Info.DefaultEmail,Info.Contacts.Info.DefaultPhone"
+      },
       "url": "api/biz/customers/{{ entity['$source']['ID']}}"
     },
     "customers-update": {

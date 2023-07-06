@@ -13,6 +13,110 @@
     "AcceptableDelta4CustomerPaymentAccountID": {
       "type": "integer"
     },
+    "Account": {
+      "additionalProperties": true,
+      "properties": {
+        "AccountGroupID": {
+          "type": "integer"
+        },
+        "AccountID": {
+          "type": "integer"
+        },
+        "AccountName": {
+          "type": "string"
+        },
+        "AccountNumber": {
+          "type": "integer"
+        },
+        "AccountSetupID": {
+          "type": "integer"
+        },
+        "Active": {
+          "type": "boolean"
+        },
+        "CostAllocationID": {
+          "type": "integer"
+        },
+        "CreatedAt": {
+          "type": "string"
+        },
+        "CreatedBy": {
+          "type": "string"
+        },
+        "CurrencyCodeID": {
+          "type": "integer"
+        },
+        "CustomValues": {
+          "additionalProperties": true,
+          "properties": {},
+          "type": "object"
+        },
+        "CustomerID": {
+          "type": "integer"
+        },
+        "Deleted": {
+          "type": "boolean"
+        },
+        "Description": {
+          "type": "string"
+        },
+        "DimensionsID": {
+          "type": "integer"
+        },
+        "DoSynchronize": {
+          "type": "boolean"
+        },
+        "EmployeeID": {
+          "type": "integer"
+        },
+        "ID": {
+          "type": "integer"
+        },
+        "Keywords": {
+          "type": "string"
+        },
+        "LockManualPosts": {
+          "type": "boolean"
+        },
+        "Locked": {
+          "type": "boolean"
+        },
+        "SaftMappingAccountID": {
+          "type": "integer"
+        },
+        "StatusCode": {
+          "type": "integer"
+        },
+        "SupplierID": {
+          "type": "integer"
+        },
+        "SystemAccount": {
+          "type": "boolean"
+        },
+        "TopLevelAccountGroupID": {
+          "type": "integer"
+        },
+        "UpdatedAt": {
+          "type": "string"
+        },
+        "UpdatedBy": {
+          "type": "string"
+        },
+        "UsePostPost": {
+          "type": "boolean"
+        },
+        "UseVatDeductionGroupID": {
+          "type": "integer"
+        },
+        "VatTypeID": {
+          "type": "integer"
+        },
+        "Visible": {
+          "type": "boolean"
+        }
+      },
+      "type": "object"
+    },
     "AvtaleGiro": {
       "type": "boolean"
     },
@@ -107,6 +211,611 @@
     "ID": {
       "type": "integer"
     },
+    "Info": {
+      "additionalProperties": true,
+      "properties": {
+        "Addresses": {
+          "items": {
+            "additionalProperties": true,
+            "properties": {
+              "AddressLine1": {
+                "type": "string"
+              },
+              "AddressLine2": {
+                "type": "string"
+              },
+              "AddressLine3": {
+                "type": "string"
+              },
+              "BusinessRelationID": {
+                "type": "integer"
+              },
+              "City": {
+                "type": "string"
+              },
+              "Country": {
+                "type": "string"
+              },
+              "CountryCode": {
+                "type": "string"
+              },
+              "CreatedAt": {
+                "type": "string"
+              },
+              "CreatedBy": {
+                "type": "string"
+              },
+              "CustomValues": {
+                "additionalProperties": true,
+                "properties": {},
+                "type": "object"
+              },
+              "Deleted": {
+                "type": "boolean"
+              },
+              "ID": {
+                "type": "integer"
+              },
+              "PostalCode": {
+                "type": "string"
+              },
+              "Region": {
+                "type": "string"
+              },
+              "StatusCode": {
+                "type": "integer"
+              },
+              "UpdatedAt": {
+                "type": "string"
+              },
+              "UpdatedBy": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "Contacts": {
+          "items": {
+            "additionalProperties": true,
+            "properties": {
+              "Comment": {
+                "type": "null"
+              },
+              "CreatedAt": {
+                "type": "string"
+              },
+              "CreatedBy": {
+                "type": "string"
+              },
+              "CustomValues": {
+                "additionalProperties": true,
+                "properties": {},
+                "type": "object"
+              },
+              "Deleted": {
+                "type": "boolean"
+              },
+              "ID": {
+                "type": "integer"
+              },
+              "Info": {
+                "additionalProperties": true,
+                "properties": {
+                  "CreatedAt": {
+                    "type": "string"
+                  },
+                  "CreatedBy": {
+                    "type": "string"
+                  },
+                  "CustomValues": {
+                    "additionalProperties": true,
+                    "properties": {},
+                    "type": "object"
+                  },
+                  "DefaultBankAccountID": {
+                    "type": "integer"
+                  },
+                  "DefaultContactID": {
+                    "type": "integer"
+                  },
+                  "DefaultEmail": {
+                    "additionalProperties": true,
+                    "properties": {
+                      "BusinessRelationID": {
+                        "type": "integer"
+                      },
+                      "CreatedAt": {
+                        "type": "string"
+                      },
+                      "CreatedBy": {
+                        "type": "string"
+                      },
+                      "CustomValues": {
+                        "additionalProperties": true,
+                        "properties": {},
+                        "type": "object"
+                      },
+                      "Deleted": {
+                        "type": "boolean"
+                      },
+                      "Description": {
+                        "type": "string"
+                      },
+                      "EmailAddress": {
+                        "type": "string"
+                      },
+                      "ID": {
+                        "type": "integer"
+                      },
+                      "StatusCode": {
+                        "type": "integer"
+                      },
+                      "Type": {
+                        "type": "string"
+                      },
+                      "UpdatedAt": {
+                        "type": "string"
+                      },
+                      "UpdatedBy": {
+                        "type": "string"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "DefaultEmailID": {
+                    "type": "integer"
+                  },
+                  "DefaultPhone": {
+                    "additionalProperties": true,
+                    "properties": {
+                      "BusinessRelationID": {
+                        "type": "integer"
+                      },
+                      "CountryCode": {
+                        "type": "string"
+                      },
+                      "CreatedAt": {
+                        "type": "string"
+                      },
+                      "CreatedBy": {
+                        "type": "string"
+                      },
+                      "CustomValues": {
+                        "additionalProperties": true,
+                        "properties": {},
+                        "type": "object"
+                      },
+                      "Deleted": {
+                        "type": "boolean"
+                      },
+                      "Description": {
+                        "type": "string"
+                      },
+                      "ID": {
+                        "type": "integer"
+                      },
+                      "Number": {
+                        "type": "string"
+                      },
+                      "StatusCode": {
+                        "type": "integer"
+                      },
+                      "Type": {
+                        "type": "integer"
+                      },
+                      "UpdatedAt": {
+                        "type": "string"
+                      },
+                      "UpdatedBy": {
+                        "type": "string"
+                      }
+                    },
+                    "type": "object"
+                  },
+                  "DefaultPhoneID": {
+                    "type": "integer"
+                  },
+                  "Deleted": {
+                    "type": "boolean"
+                  },
+                  "ID": {
+                    "type": "integer"
+                  },
+                  "InvoiceAddressID": {
+                    "type": "integer"
+                  },
+                  "Name": {
+                    "type": "string"
+                  },
+                  "ShippingAddressID": {
+                    "type": "integer"
+                  },
+                  "StatusCode": {
+                    "type": "integer"
+                  },
+                  "UpdatedAt": {
+                    "type": "string"
+                  },
+                  "UpdatedBy": {
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "InfoID": {
+                "type": "integer"
+              },
+              "ParentBusinessRelationID": {
+                "type": "integer"
+              },
+              "Role": {
+                "type": "string"
+              },
+              "StatusCode": {
+                "type": "integer"
+              },
+              "UpdatedAt": {
+                "type": "string"
+              },
+              "UpdatedBy": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "CreatedAt": {
+          "type": "string"
+        },
+        "CreatedBy": {
+          "type": "string"
+        },
+        "CustomValues": {
+          "additionalProperties": true,
+          "properties": {},
+          "type": "object"
+        },
+        "DefaultBankAccount": {
+          "additionalProperties": true,
+          "properties": {},
+          "type": "object"
+        },
+        "DefaultBankAccountID": {
+          "type": "integer"
+        },
+        "DefaultContactID": {
+          "type": "integer"
+        },
+        "DefaultEmail": {
+          "additionalProperties": true,
+          "properties": {
+            "BusinessRelationID": {
+              "type": "integer"
+            },
+            "CreatedAt": {
+              "type": "string"
+            },
+            "CreatedBy": {
+              "type": "string"
+            },
+            "CustomValues": {
+              "additionalProperties": true,
+              "properties": {},
+              "type": "object"
+            },
+            "Deleted": {
+              "type": "boolean"
+            },
+            "Description": {
+              "type": "string"
+            },
+            "EmailAddress": {
+              "type": "string"
+            },
+            "ID": {
+              "type": "integer"
+            },
+            "StatusCode": {
+              "type": "integer"
+            },
+            "Type": {
+              "type": "string"
+            },
+            "UpdatedAt": {
+              "type": "string"
+            },
+            "UpdatedBy": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "DefaultEmailID": {
+          "type": "integer"
+        },
+        "DefaultPhone": {
+          "additionalProperties": true,
+          "properties": {
+            "BusinessRelationID": {
+              "type": "integer"
+            },
+            "CountryCode": {
+              "type": "string"
+            },
+            "CreatedAt": {
+              "type": "string"
+            },
+            "CreatedBy": {
+              "type": "string"
+            },
+            "CustomValues": {
+              "additionalProperties": true,
+              "properties": {},
+              "type": "object"
+            },
+            "Deleted": {
+              "type": "boolean"
+            },
+            "Description": {
+              "type": "string"
+            },
+            "ID": {
+              "type": "integer"
+            },
+            "Number": {
+              "type": "string"
+            },
+            "StatusCode": {
+              "type": "integer"
+            },
+            "Type": {
+              "type": "integer"
+            },
+            "UpdatedAt": {
+              "type": "string"
+            },
+            "UpdatedBy": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "DefaultPhoneID": {
+          "type": "integer"
+        },
+        "Deleted": {
+          "type": "boolean"
+        },
+        "Emails": {
+          "items": {
+            "additionalProperties": true,
+            "properties": {
+              "BusinessRelationID": {
+                "type": "integer"
+              },
+              "CreatedAt": {
+                "type": "string"
+              },
+              "CreatedBy": {
+                "type": "string"
+              },
+              "CustomValues": {
+                "additionalProperties": true,
+                "properties": {},
+                "type": "object"
+              },
+              "Deleted": {
+                "type": "boolean"
+              },
+              "Description": {
+                "type": "string"
+              },
+              "EmailAddress": {
+                "type": "string"
+              },
+              "ID": {
+                "type": "integer"
+              },
+              "StatusCode": {
+                "type": "integer"
+              },
+              "Type": {
+                "type": "string"
+              },
+              "UpdatedAt": {
+                "type": "string"
+              },
+              "UpdatedBy": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "ID": {
+          "type": "integer"
+        },
+        "InvoiceAddress": {
+          "additionalProperties": true,
+          "properties": {
+            "AddressLine1": {
+              "type": "string"
+            },
+            "AddressLine2": {
+              "type": "string"
+            },
+            "AddressLine3": {
+              "type": "string"
+            },
+            "BusinessRelationID": {
+              "type": "integer"
+            },
+            "City": {
+              "type": "string"
+            },
+            "Country": {
+              "type": "string"
+            },
+            "CountryCode": {
+              "type": "string"
+            },
+            "CreatedAt": {
+              "type": "string"
+            },
+            "CreatedBy": {
+              "type": "string"
+            },
+            "CustomValues": {
+              "additionalProperties": true,
+              "properties": {},
+              "type": "object"
+            },
+            "Deleted": {
+              "type": "boolean"
+            },
+            "ID": {
+              "type": "integer"
+            },
+            "PostalCode": {
+              "type": "string"
+            },
+            "Region": {
+              "type": "string"
+            },
+            "StatusCode": {
+              "type": "integer"
+            },
+            "UpdatedAt": {
+              "type": "string"
+            },
+            "UpdatedBy": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "InvoiceAddressID": {
+          "type": "integer"
+        },
+        "Name": {
+          "type": "string"
+        },
+        "Phones": {
+          "items": {
+            "additionalProperties": true,
+            "properties": {
+              "BusinessRelationID": {
+                "type": "integer"
+              },
+              "CountryCode": {
+                "type": "string"
+              },
+              "CreatedAt": {
+                "type": "string"
+              },
+              "CreatedBy": {
+                "type": "string"
+              },
+              "CustomValues": {
+                "additionalProperties": true,
+                "properties": {},
+                "type": "object"
+              },
+              "Deleted": {
+                "type": "boolean"
+              },
+              "Description": {
+                "type": "string"
+              },
+              "ID": {
+                "type": "integer"
+              },
+              "Number": {
+                "type": "string"
+              },
+              "StatusCode": {
+                "type": "integer"
+              },
+              "Type": {
+                "type": "integer"
+              },
+              "UpdatedAt": {
+                "type": "string"
+              },
+              "UpdatedBy": {
+                "type": "string"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "ShippingAddress": {
+          "additionalProperties": true,
+          "properties": {
+            "AddressLine1": {
+              "type": "string"
+            },
+            "AddressLine2": {
+              "type": "string"
+            },
+            "AddressLine3": {
+              "type": "string"
+            },
+            "BusinessRelationID": {
+              "type": "integer"
+            },
+            "City": {
+              "type": "string"
+            },
+            "Country": {
+              "type": "string"
+            },
+            "CountryCode": {
+              "type": "string"
+            },
+            "CreatedAt": {
+              "type": "string"
+            },
+            "CreatedBy": {
+              "type": "string"
+            },
+            "CustomValues": {
+              "additionalProperties": true,
+              "properties": {},
+              "type": "object"
+            },
+            "Deleted": {
+              "type": "boolean"
+            },
+            "ID": {
+              "type": "integer"
+            },
+            "PostalCode": {
+              "type": "string"
+            },
+            "Region": {
+              "type": "string"
+            },
+            "StatusCode": {
+              "type": "integer"
+            },
+            "UpdatedAt": {
+              "type": "string"
+            },
+            "UpdatedBy": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
     "InvoiceChargeID": {
       "type": "integer"
     },
@@ -134,6 +843,9 @@
     },
     "ReminderEmailAddress": {
       "type": "string"
+    },
+    "ShippingAddressID": {
+      "type": "integer"
     },
     "SocialSecurityNumber": {
       "type": "string"
