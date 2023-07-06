@@ -20,6 +20,16 @@
     "companies-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/companies",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "orderby": "UpdatedAt",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1|int*page }}{% endif %}",
+        "top": "1"
+      },
       "url": "api/biz/companies"
     },
     "companies-lookup": {
@@ -43,6 +53,16 @@
     "contacts-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/contacts",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "orderby": "UpdatedAt",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1|int*page }}{% endif %}",
+        "top": "1"
+      },
       "url": "api/biz/contacts?expand=Info,Info.InvoiceAddress,Info.DefaultPhone,Info.DefaultEmail,Info.DefaultAddress&hateoas=false&top=100"
     },
     "contacts-lookup": {
@@ -66,6 +86,16 @@
     "countries-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/countries",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "orderby": "UpdatedAt",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 50|int*page }}{% endif %}",
+        "top": "50"
+      },
       "url": "api/biz/countries"
     },
     "countries-lookup": {
@@ -89,6 +119,16 @@
     "currencies-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/currencies",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "orderby": "UpdatedAt",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 200|int*page }}{% endif %}",
+        "top": "200"
+      },
       "url": "api/biz/currencies"
     },
     "currencies-lookup": {
@@ -112,6 +152,16 @@
     "currencycodes-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/currencycodes",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "orderby": "UpdatedAt",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 10|int*page }}{% endif %}",
+        "top": "10"
+      },
       "url": "api/biz/currencycodes"
     },
     "currencycodes-lookup": {
@@ -135,8 +185,16 @@
     "customers-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/customers",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
       "params": {
-        "expand": "Account,BusinessRelation,Info,Info.Phones,Info.DefaultPhone,Info.Addresses,Info.Emails,Info.DefaultEmail,Info.ShippingAddress,Info.InvoiceAddress,Info.DefaultBankAccount,Info.Contacts.Info,Info.Contacts.Info.DefaultEmail,Info.Contacts.Info.DefaultPhone"
+        "expand": "Account,BusinessRelation,Info,Info.Phones,Info.DefaultPhone,Info.Addresses,Info.Emails,Info.DefaultEmail,Info.ShippingAddress,Info.InvoiceAddress,Info.DefaultBankAccount,Info.Contacts.Info,Info.Contacts.Info.DefaultEmail,Info.Contacts.Info.DefaultPhone",
+        "orderby": "UpdatedAt",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1|int*page }}{% endif %}",
+        "top": "1"
       },
       "url": "api/biz/customers"
     },
@@ -164,6 +222,16 @@
     "departments-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/departments",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "orderby": "UpdatedAt",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1|int*page }}{% endif %}",
+        "top": "1"
+      },
       "url": "api/biz/departments"
     },
     "departments-lookup": {
@@ -187,6 +255,16 @@
     "dimensions-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/dimensions",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "orderby": "UpdatedAt",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1|int*page }}{% endif %}",
+        "top": "1"
+      },
       "url": "api/biz/dimensions"
     },
     "dimensions-lookup": {
@@ -210,6 +288,16 @@
     "employees-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/employees",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "orderby": "UpdatedAt",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1|int*page }}{% endif %}",
+        "top": "1"
+      },
       "url": "api/biz/employees"
     },
     "employees-lookup": {
@@ -233,6 +321,16 @@
     "orderitems-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/orderitems",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "orderby": "UpdatedAt",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1|int*page }}{% endif %}",
+        "top": "1"
+      },
       "url": "api/biz/orderitems"
     },
     "orderitems-lookup": {
@@ -256,6 +354,16 @@
     "orders-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/orders",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "orderby": "UpdatedAt",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1|int*page }}{% endif %}",
+        "top": "1"
+      },
       "url": "api/biz/orders"
     },
     "orders-lookup": {
@@ -279,6 +387,16 @@
     "products-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/products",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "orderby": "UpdatedAt",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1|int*page }}{% endif %}",
+        "top": "1"
+      },
       "url": "api/biz/products"
     },
     "products-lookup": {
@@ -302,6 +420,16 @@
     "projects-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/projects",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "orderby": "UpdatedAt",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1|int*page }}{% endif %}",
+        "top": "1"
+      },
       "url": "api/biz/projects"
     },
     "projects-lookup": {
@@ -325,6 +453,16 @@
     "projectstasks-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/projects-tasks",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "orderby": "UpdatedAt",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1|int*page }}{% endif %}",
+        "top": "1"
+      },
       "url": "api/biz/projects-tasks"
     },
     "projectstasks-lookup": {
