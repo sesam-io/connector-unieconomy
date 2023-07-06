@@ -1,5 +1,4 @@
 {
-  "system": "UniEconomomy",
   "additional_parameters": {
     "token_url": {}
   },
@@ -59,5 +58,6 @@
     ],
     "token_url": "https://test-login.softrig.com/connect/token"
   },
+  "system": "UniEconomomy",
   "system-template": "templates/system.json"
 }
