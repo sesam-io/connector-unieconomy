@@ -43,6 +43,9 @@
     },
     "projects": {
       "template": "templates/customers.json"
+    },
+    "projectstasks": {
+      "template": "templates/customers.json"
     }
   },
   "oauth2": {

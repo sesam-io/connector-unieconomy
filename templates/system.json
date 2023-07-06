@@ -306,6 +306,29 @@
       "method": "PUT",
       "payload-type": "json",
       "url": "api/biz/projects/{{ entity['$source']['ID'] }}"
+    },
+    "projectstasks-delete": {
+      "method": "DELETE",
+      "url": "api/biz/projects-tasks/{{ entity['$source']['ID'] }}"
+    },
+    "projectstasks-insert": {
+      "method": "POST",
+      "payload-type": "json",
+      "url": "api/biz/projects-tasks/{{ entity['$source']['ID'] }}"
+    },
+    "projectstasks-list": {
+      "id_expression": "{{ ID }}",
+      "method": "GET",
+      "url": "api/biz/projects-tasks"
+    },
+    "projectstasks-lookup": {
+      "method": "GET",
+      "url": "api/biz/projects-tasks/{{ entity['$source']['ID'] }}"
+    },
+    "projectstasks-update": {
+      "method": "PUT",
+      "payload-type": "json",
+      "url": "api/biz/projects-tasks/{{ entity['$source']['ID'] }}"
     }
   },
   "type": "system:rest",
