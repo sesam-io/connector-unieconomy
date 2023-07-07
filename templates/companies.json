@@ -1,12 +1,15 @@
 [
   {
     "_id": "{{@ system @}}-{{@ datatype @}}-collect",
+    "comment": "WARNING! This pipe is generated from the template of the 'orders' datatype and changes will be silently ignored during collapse. For more information see the connectorpy README.",
     "exclude_completeness": [
       "{{@ system @}}-{{@ datatype @}}-share"
     ],
     "namespaced_identifiers": false,
     "source": {
+      "is_since_comparable": true,
       "operation": "{{@ datatype @}}-list",
+      "supports_since": true,
       "system": "{{@ system @}}",
       "trace": {
         "log_request_body_maxsize": 100000,
@@ -75,6 +78,7 @@
   {
     "_id": "{{@ system @}}-{{@ datatype @}}-share",
     "batch_size": 1,
+    "comment": "WARNING! This pipe is generated from the template of the 'orders' datatype and changes will be silently ignored during collapse. For more information see the connectorpy README.",
     "namespaced_identifiers": false,
     "sink": {
       "deletion_tracking": false,
