@@ -10,10 +10,6 @@
       "operation": "{{@ datatype @}}-list",
       "supports_since": true,
       "system": "{{@ system @}}",
-      "trace": {
-        "log_request_body_maxsize": 100000,
-        "log_response_body_maxsize": 100000
-      },
       "type": "rest"
     },
     "transform": [
@@ -97,10 +93,6 @@
         "share_dataset": "{{@ system @}}-{{@ datatype @}}-share"
       },
       "template": "transform-share-rest",
-      "trace": {
-        "log_request_body_maxsize": 100000,
-        "log_response_body_maxsize": 100000
-      },
       "type": "template"
     },
     "type": "pipe"
