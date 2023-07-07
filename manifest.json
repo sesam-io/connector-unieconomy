@@ -5,46 +5,46 @@
   "auth": "oauth2",
   "datatypes": {
     "companies": {
-      "template": "templates/customers.json"
+      "template": "templates/companies.json"
     },
     "contacts": {
-      "template": "templates/customers.json"
+      "template": "templates/orders.json"
     },
     "countries": {
-      "template": "templates/customers.json"
+      "template": "templates/companies.json"
     },
     "currencies": {
-      "template": "templates/customers.json"
+      "template": "templates/companies.json"
     },
     "currencycodes": {
-      "template": "templates/customers.json"
+      "template": "templates/orders.json"
     },
     "customers": {
-      "template": "templates/customers.json"
+      "template": "templates/orders.json"
     },
     "departments": {
-      "template": "templates/customers.json"
+      "template": "templates/orders.json"
     },
     "dimensions": {
-      "template": "templates/customers.json"
+      "template": "templates/orders.json"
     },
     "employees": {
-      "template": "templates/customers.json"
+      "template": "templates/orders.json"
     },
     "orderitems": {
-      "template": "templates/customers.json"
+      "template": "templates/orders.json"
     },
     "orders": {
-      "template": "templates/customers.json"
+      "template": "templates/orders.json"
     },
     "products": {
-      "template": "templates/customers.json"
+      "template": "templates/orders.json"
     },
     "projects": {
-      "template": "templates/customers.json"
+      "template": "templates/orders.json"
     },
     "projectstasks": {
-      "template": "templates/customers.json"
+      "template": "templates/orders.json"
     }
   },
   "oauth2": {

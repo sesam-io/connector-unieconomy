@@ -20,6 +20,19 @@
     "companies-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/companies",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "filter": "{% if since is defined and since is not none %}(UpdatedAt ge '{{ since }}' or CreatedAt ge '{{ since }}'){% else %}sesam:markskip{% endif %}",
+        "orderby": "ID",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1000|int*page }}{% endif %}",
+        "top": "1000"
+      },
+      "since_property_location": "manual",
+      "updated_expression": "{% if entity.UpdatedAt is defined and entity.UpdatedAt %}{{ entity.UpdatedAt }}{% else %}{%if entity.CreatedAt is defined and entity.CreatedAt %}{{ entity.CreatedAt }}{% else %}1970-01-01T00:00:00{% endif %}{% endif %}",
       "url": "api/biz/companies"
     },
     "companies-lookup": {
@@ -43,6 +56,19 @@
     "contacts-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/contacts",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "filter": "{% if since is defined and since is not none %}(UpdatedAt ge '{{ since }}' or CreatedAt ge '{{ since }}'){% else %}sesam:markskip{% endif %}",
+        "orderby": "ID",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1000|int*page }}{% endif %}",
+        "top": "1000"
+      },
+      "since_property_location": "manual",
+      "updated_expression": "{% if entity.UpdatedAt is defined and entity.UpdatedAt %}{{ entity.UpdatedAt }}{% else %}{%if entity.CreatedAt is defined and entity.CreatedAt %}{{ entity.CreatedAt }}{% else %}1970-01-01T00:00:00{% endif %}{% endif %}",
       "url": "api/biz/contacts?expand=Info,Info.InvoiceAddress,Info.DefaultPhone,Info.DefaultEmail,Info.DefaultAddress&hateoas=false&top=100"
     },
     "contacts-lookup": {
@@ -66,6 +92,16 @@
     "countries-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/countries",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "orderby": "ID",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1000|int*page }}{% endif %}",
+        "top": "1000"
+      },
       "url": "api/biz/countries"
     },
     "countries-lookup": {
@@ -89,6 +125,16 @@
     "currencies-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/currencies",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "orderby": "ID",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1000|int*page }}{% endif %}",
+        "top": "1000"
+      },
       "url": "api/biz/currencies"
     },
     "currencies-lookup": {
@@ -112,6 +158,19 @@
     "currencycodes-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/currencycodes",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "filter": "{% if since is defined and since is not none %}(UpdatedAt ge '{{ since }}' or CreatedAt ge '{{ since }}'){% else %}sesam:markskip{% endif %}",
+        "orderby": "ID",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1000|int*page }}{% endif %}",
+        "top": "1000"
+      },
+      "since_property_location": "manual",
+      "updated_expression": "{% if entity.UpdatedAt is defined and entity.UpdatedAt %}{{ entity.UpdatedAt }}{% else %}{%if entity.CreatedAt is defined and entity.CreatedAt %}{{ entity.CreatedAt }}{% else %}1970-01-01T00:00:00{% endif %}{% endif %}",
       "url": "api/biz/currencycodes"
     },
     "currencycodes-lookup": {
@@ -135,9 +194,20 @@
     "customers-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/customers",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
       "params": {
-        "expand": "Account,BusinessRelation,Info,Info.Phones,Info.DefaultPhone,Info.Addresses,Info.Emails,Info.DefaultEmail,Info.ShippingAddress,Info.InvoiceAddress,Info.DefaultBankAccount,Info.Contacts.Info,Info.Contacts.Info.DefaultEmail,Info.Contacts.Info.DefaultPhone"
+        "expand": "Account,BusinessRelation,Info,Info.Phones,Info.DefaultPhone,Info.Addresses,Info.Emails,Info.DefaultEmail,Info.ShippingAddress,Info.InvoiceAddress,Info.DefaultBankAccount,Info.Contacts.Info,Info.Contacts.Info.DefaultEmail,Info.Contacts.Info.DefaultPhone",
+        "filter": "{% if since is defined and since is not none %}(UpdatedAt ge '{{ since }}' or CreatedAt ge '{{ since }}'){% else %}sesam:markskip{% endif %}",
+        "orderby": "ID",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1000|int*page }}{% endif %}",
+        "top": "1000"
       },
+      "since_property_location": "manual",
+      "updated_expression": "{% if entity.UpdatedAt is defined and entity.UpdatedAt %}{{ entity.UpdatedAt }}{% else %}{%if entity.CreatedAt is defined and entity.CreatedAt %}{{ entity.CreatedAt }}{% else %}1970-01-01T00:00:00{% endif %}{% endif %}",
       "url": "api/biz/customers"
     },
     "customers-lookup": {
@@ -164,6 +234,19 @@
     "departments-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/departments",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "filter": "{% if since is defined and since is not none %}(UpdatedAt ge '{{ since }}' or CreatedAt ge '{{ since }}'){% else %}sesam:markskip{% endif %}",
+        "orderby": "ID",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1000|int*page }}{% endif %}",
+        "top": "1000"
+      },
+      "since_property_location": "manual",
+      "updated_expression": "{% if entity.UpdatedAt is defined and entity.UpdatedAt %}{{ entity.UpdatedAt }}{% else %}{%if entity.CreatedAt is defined and entity.CreatedAt %}{{ entity.CreatedAt }}{% else %}1970-01-01T00:00:00{% endif %}{% endif %}",
       "url": "api/biz/departments"
     },
     "departments-lookup": {
@@ -187,6 +270,19 @@
     "dimensions-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/dimensions",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "filter": "{% if since is defined and since is not none %}(UpdatedAt ge '{{ since }}' or CreatedAt ge '{{ since }}'){% else %}sesam:markskip{% endif %}",
+        "orderby": "ID",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1000|int*page }}{% endif %}",
+        "top": "1000"
+      },
+      "since_property_location": "manual",
+      "updated_expression": "{% if entity.UpdatedAt is defined and entity.UpdatedAt %}{{ entity.UpdatedAt }}{% else %}{%if entity.CreatedAt is defined and entity.CreatedAt %}{{ entity.CreatedAt }}{% else %}1970-01-01T00:00:00{% endif %}{% endif %}",
       "url": "api/biz/dimensions"
     },
     "dimensions-lookup": {
@@ -210,6 +306,19 @@
     "employees-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/employees",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "filter": "{% if since is defined and since is not none %}(UpdatedAt ge '{{ since }}' or CreatedAt ge '{{ since }}'){% else %}sesam:markskip{% endif %}",
+        "orderby": "ID",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1000|int*page }}{% endif %}",
+        "top": "1000"
+      },
+      "since_property_location": "manual",
+      "updated_expression": "{% if entity.UpdatedAt is defined and entity.UpdatedAt %}{{ entity.UpdatedAt }}{% else %}{%if entity.CreatedAt is defined and entity.CreatedAt %}{{ entity.CreatedAt }}{% else %}1970-01-01T00:00:00{% endif %}{% endif %}",
       "url": "api/biz/employees"
     },
     "employees-lookup": {
@@ -233,6 +342,19 @@
     "orderitems-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/orderitems",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "filter": "{% if since is defined and since is not none %}(UpdatedAt ge '{{ since }}' or CreatedAt ge '{{ since }}'){% else %}sesam:markskip{% endif %}",
+        "orderby": "ID",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1000|int*page }}{% endif %}",
+        "top": "1000"
+      },
+      "since_property_location": "manual",
+      "updated_expression": "{% if entity.UpdatedAt is defined and entity.UpdatedAt %}{{ entity.UpdatedAt }}{% else %}{%if entity.CreatedAt is defined and entity.CreatedAt %}{{ entity.CreatedAt }}{% else %}1970-01-01T00:00:00{% endif %}{% endif %}",
       "url": "api/biz/orderitems"
     },
     "orderitems-lookup": {
@@ -256,6 +378,19 @@
     "orders-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/orders",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "filter": "{% if since is defined and since is not none %}(UpdatedAt ge '{{ since }}' or CreatedAt ge '{{ since }}'){% else %}sesam:markskip{% endif %}",
+        "orderby": "ID",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1000|int*page }}{% endif %}",
+        "top": "1000"
+      },
+      "since_property_location": "manual",
+      "updated_expression": "{% if entity.UpdatedAt is defined and entity.UpdatedAt %}{{ entity.UpdatedAt }}{% else %}{%if entity.CreatedAt is defined and entity.CreatedAt %}{{ entity.CreatedAt }}{% else %}1970-01-01T00:00:00{% endif %}{% endif %}",
       "url": "api/biz/orders"
     },
     "orders-lookup": {
@@ -279,6 +414,19 @@
     "products-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/products",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "filter": "{% if since is defined and since is not none %}(UpdatedAt ge '{{ since }}' or CreatedAt ge '{{ since }}'){% else %}sesam:markskip{% endif %}",
+        "orderby": "ID",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1000|int*page }}{% endif %}",
+        "top": "1000"
+      },
+      "since_property_location": "manual",
+      "updated_expression": "{% if entity.UpdatedAt is defined and entity.UpdatedAt %}{{ entity.UpdatedAt }}{% else %}{%if entity.CreatedAt is defined and entity.CreatedAt %}{{ entity.CreatedAt }}{% else %}1970-01-01T00:00:00{% endif %}{% endif %}",
       "url": "api/biz/products"
     },
     "products-lookup": {
@@ -302,6 +450,19 @@
     "projects-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/projects",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "filter": "{% if since is defined and since is not none %}(UpdatedAt ge '{{ since }}' or CreatedAt ge '{{ since }}'){% else %}sesam:markskip{% endif %}",
+        "orderby": "ID",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1000|int*page }}{% endif %}",
+        "top": "1000"
+      },
+      "since_property_location": "manual",
+      "updated_expression": "{% if entity.UpdatedAt is defined and entity.UpdatedAt %}{{ entity.UpdatedAt }}{% else %}{%if entity.CreatedAt is defined and entity.CreatedAt %}{{ entity.CreatedAt }}{% else %}1970-01-01T00:00:00{% endif %}{% endif %}",
       "url": "api/biz/projects"
     },
     "projects-lookup": {
@@ -325,6 +486,19 @@
     "projectstasks-list": {
       "id_expression": "{{ ID }}",
       "method": "GET",
+      "next_page_link": "api/biz/projects-tasks",
+      "next_page_termination_strategy": [
+        "same-response",
+        "empty-result"
+      ],
+      "params": {
+        "filter": "{% if since is defined and since is not none %}(UpdatedAt ge '{{ since }}' or CreatedAt ge '{{ since }}'){% else %}sesam:markskip{% endif %}",
+        "orderby": "ID",
+        "skip": "{% if is_first_page %}sesam:markskip{% else %}{{ 1000|int*page }}{% endif %}",
+        "top": "1000"
+      },
+      "since_property_location": "manual",
+      "updated_expression": "{% if entity.UpdatedAt is defined and entity.UpdatedAt %}{{ entity.UpdatedAt }}{% else %}{%if entity.CreatedAt is defined and entity.CreatedAt %}{{ entity.CreatedAt }}{% else %}1970-01-01T00:00:00{% endif %}{% endif %}",
       "url": "api/biz/projects-tasks"
     },
     "projectstasks-lookup": {
